@@ -56,6 +56,15 @@
   background: radial-gradient(circle at 50% 50%, #5a3a1e 0 9%, transparent 10%), radial-gradient(ellipse at 50% 14%, rgba(240, 217, 130, 0.75) 0 12%, transparent 13%), radial-gradient(ellipse at 86% 50%, rgba(240, 217, 130, 0.75) 0 12%, transparent 13%), radial-gradient(ellipse at 50% 86%, rgba(240, 217, 130, 0.75) 0 12%, transparent 13%), radial-gradient(ellipse at 14% 50%, rgba(240, 217, 130, 0.75) 0 12%, transparent 13%);
 }
 
+.wellness-image {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: var(--paper);
+}
+
 .take-action-page {
   background: var(--bg);
 }
@@ -75,12 +84,33 @@
   gap: 1rem;
 }
 
-.resource-card {
+.resource-card,
+.contact-card {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: rgba(255, 250, 240, 0.86);
   box-shadow: var(--shadow);
   padding: 1.35rem;
+}
+
+.contact-card {
+  margin-top: 1.5rem;
+}
+
+.contact-card span {
+  display: block;
+  color: var(--green);
+  font-weight: 900;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+}
+
+.contact-card a {
+  color: var(--deep);
+  font-weight: 900;
+  overflow-wrap: anywhere;
 }
 
 .resource-card h3 {

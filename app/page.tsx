@@ -38,9 +38,15 @@ const visionGallery = [
   },
   {
     title: "Trails, Water, and Public Access",
-    image: "/images/ecusta-sunflower-geometry.svg",
-    alt: "Nature, trail, river, mountains, and sunflower concept for public access at Ecusta",
+    image: "/images/ecusta-trail-recreation.svg",
+    alt: "Walking and biking trail through sunflowers, native grasses, river, and mountains",
     text: "A future tied to the Ecusta Trail, Pisgah Forest, waterfalls, walking paths, biking, family recreation, education, and outdoor connection.",
+  },
+  {
+    title: "Bloom to Benefit",
+    image: "/images/ecusta-harvest-reuse.svg",
+    alt: "Sunflower harvest, seed baskets, education, and regenerative reuse concept",
+    text: "A seasonal cycle where bloom leads to learning, stewardship, seed saving, community events, and carefully explored reuse opportunities.",
   },
 ];
 
@@ -191,7 +197,7 @@ export default function Home() {
             </p>
             <div className="hero-actions">
               <a className="button primary" href={petitionUrl} target="_blank" rel="noopener noreferrer">Sign the petition</a>
-              <a className="button secondary" href="#gallery">View the vision</a>
+              <a className="button secondary" href="/vision-gallery">View the vision gallery</a>
               <a className="button secondary" href="/contact">Contact Amy</a>
             </div>
           </div>
@@ -247,6 +253,9 @@ export default function Home() {
               </div>
             </article>
           ))}
+        </div>
+        <div className="gallery-cta">
+          <a className="button primary" href="/vision-gallery">Open full vision gallery</a>
         </div>
       </section>
 
@@ -496,7 +505,7 @@ export default function Home() {
 
       <footer className="footer">
         <p>Ecusta Land</p>
-        <p><a href={petitionUrl} target="_blank" rel="noopener noreferrer">Petition</a> · <a href="/take-action">Take Action</a> · <a href="/contact">Contact Amy Turner</a></p>
+        <p><a href={petitionUrl} target="_blank" rel="noopener noreferrer">Petition</a> · <a href="/vision-gallery">Gallery</a> · <a href="/take-action">Take Action</a> · <a href="/contact">Contact Amy Turner</a></p>
       </footer>
     </main>
   );

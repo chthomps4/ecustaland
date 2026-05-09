@@ -37,10 +37,15 @@ const sharePrompts = [
 export default function ContactPage() {
   return (
     <main className="take-action-page">
+      <a className="floating-petition" href={petitionUrl} target="_blank" rel="noopener noreferrer">
+        Sign Petition
+      </a>
+
       <section className="section action-hero">
         <nav className="nav page-nav" aria-label="Page navigation">
           <a href="/">Home</a>
           <a href="/vision-gallery">Gallery</a>
+          <a href="/research">Research</a>
           <a href="/take-action">Take Action</a>
           <a href="/contact">Contact</a>
         </nav>
@@ -53,7 +58,7 @@ export default function ContactPage() {
           <div className="hero-actions">
             <a className="button primary" href={emailUrl}>Email Amy Turner</a>
             <a className="button secondary" href={petitionUrl} target="_blank" rel="noopener noreferrer">Sign the petition</a>
-            <a className="button secondary" href="/vision-gallery">View gallery</a>
+            <a className="button secondary" href="/research">Research & documents</a>
           </div>
         </div>
       </section>
@@ -116,7 +121,7 @@ export default function ContactPage() {
           <p className="eyebrow">Useful Links</p>
           <h2>Send people to one clear next step.</h2>
           <p>
-            The homepage explains the full idea, the gallery helps people picture it, the petition lets supporters act, and this contact page gives partners a direct path to Amy.
+            The homepage explains the full idea, the gallery helps people picture it, the research page supports careful claims, the petition lets supporters act, and this contact page gives partners a direct path to Amy.
           </p>
         </div>
         <div className="action-card">
@@ -124,12 +129,18 @@ export default function ContactPage() {
           <ul>
             <li><a href="/">Ecusta Land homepage</a></li>
             <li><a href="/vision-gallery">Vision Gallery</a></li>
+            <li><a href="/research">Research & Documents</a></li>
             <li><a href="/take-action">Take Action page</a></li>
             <li><a href={petitionUrl} target="_blank" rel="noopener noreferrer">Change.org petition</a></li>
             <li><a href={emailUrl}>Email Amy Turner</a></li>
           </ul>
         </div>
       </section>
+
+      <footer className="footer">
+        <p>Ecusta Land</p>
+        <p><a href={petitionUrl} target="_blank" rel="noopener noreferrer">Petition</a> · <a href="/vision-gallery">Gallery</a> · <a href="/research">Research</a> · <a href="/take-action">Take Action</a> · <a href="/contact">Contact Amy Turner</a></p>
+      </footer>
     </main>
   );
 }

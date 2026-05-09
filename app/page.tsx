@@ -155,7 +155,7 @@ export default function Home() {
           <a href="#vision">Vision</a>
           <a href="#gallery">Gallery</a>
           <a href="#moratorium">Moratorium</a>
-          <a href="#two-futures">Two Futures</a>
+          <a href="/research">Research</a>
           <a href="/take-action">Take Action</a>
           <a href="/contact">Contact</a>
         </nav>
@@ -172,7 +172,7 @@ export default function Home() {
             <div className="hero-actions">
               <a className="button primary" href={petitionUrl} target="_blank" rel="noopener noreferrer">Sign the petition</a>
               <a className="button secondary" href="/vision-gallery">View the vision</a>
-              <a className="button secondary" href="/contact">Contact Amy</a>
+              <a className="button secondary" href="/research">See the research</a>
             </div>
           </div>
 
@@ -377,6 +377,7 @@ export default function Home() {
               The vision can be inspiring and still be careful: no overclaiming, no unsupported accusations, and no pretending
               sunflowers alone solve a complex site.
             </p>
+            <a className="seo-link-card" href="/research">Open Research & Documents</a>
           </div>
           <div className="label-panel compact">
             <h3>Source posture</h3>
@@ -445,7 +446,7 @@ export default function Home() {
 
       <footer className="footer">
         <p>Ecusta Land</p>
-        <p><a href={petitionUrl} target="_blank" rel="noopener noreferrer">Petition</a> · <a href="/vision-gallery">Gallery</a> · <a href="/take-action">Take Action</a> · <a href="/contact">Contact Amy Turner</a></p>
+        <p><a href={petitionUrl} target="_blank" rel="noopener noreferrer">Petition</a> · <a href="/vision-gallery">Gallery</a> · <a href="/research">Research</a> · <a href="/take-action">Take Action</a> · <a href="/contact">Contact Amy Turner</a></p>
       </footer>
     </main>
   );

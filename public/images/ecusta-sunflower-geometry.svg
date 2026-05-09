@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Ecusta Land sunflower geometry concept</title>
+  <desc id="desc">A sunflower, mountain, river, and sacred geometry inspired concept graphic for Ecusta Land.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff4c4"/>
+      <stop offset="0.45" stop-color="#f0d982"/>
+      <stop offset="1" stop-color="#496b43"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fffaf0"/>
+      <stop offset="0.55" stop-color="#f0d982"/>
+      <stop offset="1" stop-color="#d1a436" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <circle cx="940" cy="145" r="105" fill="url(#sun)" opacity="0.9"/>
+  <path d="M0 360 C140 250 260 300 390 210 C520 120 645 250 760 170 C890 70 1040 230 1200 130 L1200 630 L0 630 Z" fill="#102016" opacity="0.42"/>
+  <path d="M0 420 C180 335 330 380 480 310 C625 240 760 370 940 290 C1040 245 1120 270 1200 220 L1200 630 L0 630 Z" fill="#1c3424" opacity="0.62"/>
+  <path d="M0 545 C220 515 370 560 550 520 C740 478 910 552 1200 492 L1200 630 L0 630 Z" fill="#496b43"/>
+  <path d="M0 575 C260 530 430 590 600 548 C740 510 890 600 1200 540" fill="none" stroke="#557a8a" stroke-width="32" opacity="0.75"/>
+  <g transform="translate(600 332)" opacity="0.8">
+    <circle r="178" fill="none" stroke="#fffaf0" stroke-width="2" opacity="0.7"/>
+    <circle r="112" fill="none" stroke="#fffaf0" stroke-width="2" opacity="0.5"/>
+    <path d="M0 -178 L154 89 L-154 89 Z" fill="none" stroke="#fffaf0" stroke-width="2" opacity="0.45"/>
+    <path d="M0 178 L154 -89 L-154 -89 Z" fill="none" stroke="#fffaf0" stroke-width="2" opacity="0.45"/>
+  </g>
+  <g transform="translate(600 334)">
+    <g fill="#f0d982">
+      <ellipse rx="38" ry="102" transform="rotate(0) translate(0 -110)"/>
+      <ellipse rx="38" ry="102" transform="rotate(30) translate(0 -110)"/>
+      <ellipse rx="38" ry="102" transform="rotate(60) translate(0 -110)"/>
+      <ellipse rx="38" ry="102" transform="rotate(90) translate(0 -110)"/>
+      <ellipse rx="38" ry="102" transform="rotate(120) translate(0 -110)"/>
+      <ellipse rx="38" ry="102" transform="rotate(150) translate(0 -110)"/>
+      <ellipse rx="38" ry="102" transform="rotate(180) translate(0 -110)"/>
+      <ellipse rx="38" ry="102" transform="rotate(210) translate(0 -110)"/>
+      <ellipse rx="38" ry="102" transform="rotate(240) translate(0 -110)"/>
+      <ellipse rx="38" ry="102" transform="rotate(270) translate(0 -110)"/>
+      <ellipse rx="38" ry="102" transform="rotate(300) translate(0 -110)"/>
+      <ellipse rx="38" ry="102" transform="rotate(330) translate(0 -110)"/>
+    </g>
+    <circle r="72" fill="#5a3a1e"/>
+    <circle r="46" fill="#7a4f35" opacity="0.85"/>
+  </g>
+  <text x="60" y="92" fill="#102016" font-family="Arial, sans-serif" font-size="52" font-weight="800">Ecusta Land</text>
+  <text x="62" y="140" fill="#102016" font-family="Arial, sans-serif" font-size="28" opacity="0.82">Sunflower Power for Brevard</text>
+</svg>

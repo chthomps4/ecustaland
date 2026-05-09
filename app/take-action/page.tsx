@@ -3,13 +3,19 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Take Action | Ecusta Land",
   description:
-    "Ways to support the Ecusta Land vision: ask for public records, compare the data-center path with wellness-centered revitalization, and explore sacred-geometry wellness design resources.",
+    "Ways to support the Ecusta Land vision: sign the sunflower petition, ask for public records, compare the data-center path with wellness-centered revitalization, and explore sacred-geometry wellness design resources.",
   alternates: {
     canonical: "https://ecustaland.org/take-action",
   },
 };
 
+const petitionUrl = "https://www.change.org/p/beautifying-ecusta-paper-mill-field";
+
 const actionItems = [
+  {
+    title: "Sign the sunflower petition",
+    text: "Support the public request to explore transforming the old Ecusta Paper Mill property into a sunflower field and community green space for Brevard and Transylvania County.",
+  },
   {
     title: "Ask for public records",
     text: "Request Ecusta-specific permit filings, utility estimates, water-use projections, noise studies, backup generator plans, heat analysis, traffic impacts, brownfields restrictions, and any public incentive or subsidy documents.",
@@ -44,15 +50,34 @@ export default function TakeActionPage() {
           <p className="eyebrow">Take Action</p>
           <h1>Help make Ecusta a place of wellness, beauty, trails, education, and public benefit.</h1>
           <p className="hero-copy">
-            The most useful public action is calm, specific, and evidence-based: ask for documents,
-            ask for comparisons, and ask whether each proposal truly fits Brevard’s future.
+            The most useful public action is calm, specific, and evidence-based: sign the petition,
+            ask for documents, ask for comparisons, and ask whether each proposal truly fits Brevard’s future.
           </p>
           <div className="hero-actions">
-            <a className="button primary" href="https://livingdesigntechnology.com/harmonypt" target="_blank" rel="noopener noreferrer">
-              Explore HarmonyPT wellness design resource
+            <a className="button primary" href={petitionUrl} target="_blank" rel="noopener noreferrer">
+              Sign the Change.org petition
+            </a>
+            <a className="button secondary" href="https://livingdesigntechnology.com/harmonypt" target="_blank" rel="noopener noreferrer">
+              Explore HarmonyPT
             </a>
             <a className="button secondary" href="/contact">Contact Amy Turner</a>
           </div>
+        </div>
+      </section>
+
+      <section className="section petition-section">
+        <div className="petition-card">
+          <div>
+            <p className="eyebrow">Petition</p>
+            <h2>Beautifying Ecusta Paper Mill Field</h2>
+            <p>
+              The petition gives supporters a simple first step: back the idea of a sunflower field and
+              community-centered green space as a better future for the former Ecusta property.
+            </p>
+          </div>
+          <a className="button primary" href={petitionUrl} target="_blank" rel="noopener noreferrer">
+            Open petition
+          </a>
         </div>
       </section>
 
@@ -66,6 +91,11 @@ export default function TakeActionPage() {
             <article className="resource-card" key={item.title}>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
+              {item.title === "Sign the sunflower petition" ? (
+                <a className="seo-link-card" href={petitionUrl} target="_blank" rel="noopener noreferrer">
+                  Sign petition
+                </a>
+              ) : null}
             </article>
           ))}
         </div>

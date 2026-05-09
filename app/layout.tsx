@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./visuals.css";
+import "./seo.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ecustaland.org"),
@@ -9,11 +10,42 @@ export const metadata: Metadata = {
     template: "%s | Ecusta Land",
   },
   description:
-    "A wellness, beautification, and community revitalization vision for the former Ecusta mill site in Brevard / Pisgah Forest, North Carolina.",
+    "Ecusta Land is a wellness, beautification, trails, sunflowers, and community revitalization vision for the former Ecusta mill site in Brevard / Pisgah Forest, North Carolina.",
+  keywords: [
+    "Ecusta Land",
+    "Ecusta",
+    "Ecusta mill",
+    "Brevard NC",
+    "Pisgah Forest",
+    "sunflower fields",
+    "brownfield revitalization",
+    "community revitalization",
+    "wellness center",
+    "sacred geometry design",
+    "Ecusta Trail",
+    "data center moratorium",
+    "phytomanagement",
+    "native planting",
+    "Blue Ridge Mountains",
+  ],
+  alternates: {
+    canonical: "https://ecustaland.org",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
     title: "Ecusta Land | Sunflower Power for Brevard",
     description:
-      "A positive community vision for restoration, wellness, trails, native planting, education, and a better fit for the former Ecusta mill site.",
+      "A positive community vision for restoration, wellness, trails, native planting, education, sacred-geometry wellness design, and a better fit for the former Ecusta mill site.",
     url: "https://ecustaland.org",
     siteName: "Ecusta Land",
     locale: "en_US",

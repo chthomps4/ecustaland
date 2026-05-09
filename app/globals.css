@@ -160,7 +160,8 @@ p {
 details,
 .pillar-card,
 .future-card,
-.cycle-card {
+.cycle-card,
+.ask-card {
   border: 1px solid var(--line);
   background: rgba(255, 250, 240, 0.72);
   border-radius: var(--radius);
@@ -261,7 +262,8 @@ details,
 
 .pillar-grid,
 .future-grid,
-.cycle-grid {
+.cycle-grid,
+.asks-grid {
   display: grid;
   gap: 1rem;
 }
@@ -272,12 +274,14 @@ details,
 
 .pillar-card,
 .future-card,
-.cycle-card {
+.cycle-card,
+.ask-card {
   padding: 1.35rem;
 }
 
 .pillar-card h3,
-.cycle-card h3 {
+.cycle-card h3,
+.ask-card h3 {
   color: var(--green);
 }
 
@@ -391,6 +395,18 @@ details,
   color: var(--deep);
   box-shadow: 0 12px 40px rgba(16, 32, 22, 0.08);
   font-weight: 750;
+}
+
+.asks-section {
+  background: linear-gradient(180deg, var(--paper), #f3ead8);
+}
+
+.asks-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.ask-card {
+  background: rgba(255, 250, 240, 0.9);
 }
 
 .records-section {
@@ -516,7 +532,8 @@ details p {
 
 @media (max-width: 1100px) {
   .pillar-grid,
-  .cycle-grid {
+  .cycle-grid,
+  .asks-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -532,7 +549,8 @@ details p {
   .timeline,
   .feature-grid,
   .tract-grid,
-  .label-grid {
+  .label-grid,
+  .asks-grid {
     grid-template-columns: 1fr;
   }
 

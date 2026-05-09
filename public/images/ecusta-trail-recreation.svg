@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Ecusta trail and recreation concept</title>
+  <desc id="desc">A warm concept image showing a walking and biking trail through sunflowers, native grasses, river, and Blue Ridge mountains.</desc>
+  <defs><linearGradient id="sky" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fffaf0"/><stop offset="0.45" stop-color="#f0d982"/><stop offset="1" stop-color="#557a8a"/></linearGradient></defs>
+  <rect width="1400" height="900" fill="url(#sky)"/>
+  <circle cx="1080" cy="150" r="95" fill="#fff8c7" opacity="0.72"/>
+  <path d="M0 410 C190 300 310 350 470 250 C640 140 760 315 925 215 C1090 115 1210 225 1400 110 L1400 900 L0 900 Z" fill="#102016" opacity="0.36"/>
+  <path d="M0 520 C240 420 420 490 625 380 C820 278 1005 480 1225 345 C1305 300 1355 310 1400 285 L1400 900 L0 900 Z" fill="#1c3424" opacity="0.56"/>
+  <path d="M0 690 C260 640 520 720 760 660 C980 605 1170 700 1400 630 L1400 900 L0 900 Z" fill="#496b43"/>
+  <path d="M-80 850 C230 710 430 720 630 585 C820 455 990 475 1480 360" fill="none" stroke="#eee0b5" stroke-width="76" stroke-linecap="round" opacity="0.95"/>
+  <path d="M-80 850 C230 710 430 720 630 585 C820 455 990 475 1480 360" fill="none" stroke="#9f8f66" stroke-width="8" stroke-dasharray="24 28" opacity="0.55"/>
+  <path d="M0 805 C210 750 440 805 680 740 C910 678 1080 790 1400 710" fill="none" stroke="#557a8a" stroke-width="36" opacity="0.75"/>
+  <g fill="#d1a436">
+    <circle cx="120" cy="650" r="30"/><circle cx="190" cy="610" r="24"/><circle cx="270" cy="670" r="26"/><circle cx="1130" cy="620" r="30"/><circle cx="1220" cy="655" r="25"/><circle cx="1305" cy="590" r="22"/>
+  </g>
+  <g stroke="#102016" stroke-width="7" fill="none" opacity="0.85">
+    <circle cx="725" cy="575" r="28"/><circle cx="805" cy="575" r="28"/><path d="M742 575 L778 520 L805 575 M778 520 L725 575 M778 520 L820 510"/>
+    <circle cx="930" cy="505" r="22"/><circle cx="990" cy="505" r="22"/><path d="M945 505 L970 462 L990 505 M970 462 L930 505 M970 462 L1005 455"/>
+  </g>
+  <g fill="#f0d982" opacity="0.92">
+    <circle cx="88" cy="742" r="20"/><circle cx="160" cy="770" r="18"/><circle cx="1190" cy="745" r="20"/><circle cx="1260" cy="785" r="17"/>
+  </g>
+  <text x="70" y="92" fill="#102016" font-family="Arial, sans-serif" font-size="44" font-weight="800">Trails Through Bloom</text>
+  <text x="72" y="136" fill="#102016" font-family="Arial, sans-serif" font-size="24" opacity="0.82">Walking • biking • river • mountain access</text>
+</svg>

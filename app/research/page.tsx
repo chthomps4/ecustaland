@@ -51,6 +51,10 @@ const claimRules = [
 export default function ResearchPage() {
   return (
     <main className="take-action-page">
+      <a className="floating-petition" href={petitionUrl} target="_blank" rel="noopener noreferrer">
+        Sign Petition
+      </a>
+
       <section className="section action-hero">
         <nav className="nav page-nav" aria-label="Page navigation">
           <a href="/">Home</a>
@@ -132,15 +136,21 @@ export default function ResearchPage() {
           </p>
         </div>
         <div className="action-card">
-          <h3>Contact:</h3>
+          <h3>Useful links:</h3>
           <ul>
             <li><a href="mailto:vibetribewellness.studio@gmail.com?subject=Ecusta%20Land%20Documents">Email Amy Turner</a></li>
-            <li><a href="/contact">Open contact page</a></li>
-            <li><a href="/take-action">Open take action page</a></li>
+            <li><a href="/vision-gallery">View the Vision Gallery</a></li>
+            <li><a href="/take-action">Open Take Action</a></li>
+            <li><a href="/contact">Open Contact</a></li>
             <li><a href={petitionUrl} target="_blank" rel="noopener noreferrer">Sign the petition</a></li>
           </ul>
         </div>
       </section>
+
+      <footer className="footer">
+        <p>Ecusta Land</p>
+        <p><a href={petitionUrl} target="_blank" rel="noopener noreferrer">Petition</a> · <a href="/vision-gallery">Gallery</a> · <a href="/research">Research</a> · <a href="/take-action">Take Action</a> · <a href="/contact">Contact Amy Turner</a></p>
+      </footer>
     </main>
   );
 }

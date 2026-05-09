@@ -1,3 +1,5 @@
+const petitionUrl = "https://www.change.org/p/beautifying-ecusta-paper-mill-field";
+
 const evidenceLabels = [
   ["A", "Official federal regulatory record"],
   ["B", "Official local government record"],
@@ -19,6 +21,27 @@ const interestCards = [
   ["Make Ecusta a destination", "Families, photographers, cyclists, seniors, school groups, wellness visitors, artists, and local businesses could all have a reason to gather around the site."],
   ["Turn a scar into a classroom", "Instead of hiding the brownfield story, Ecusta could teach phytomanagement, ecology, responsible reuse, local history, and how communities repair complicated places."],
   ["Create a seasonal economy", "Bloom walks, harvest festivals, bike rentals, local art markets, wellness classes, educational tours, and sunflower products could support small local opportunity."],
+];
+
+const visionGallery = [
+  {
+    title: "The Sunflower Field",
+    image: "/images/ecusta-sunflower-geometry.svg",
+    alt: "Sunflower field, mountain, river, and sacred geometry concept for Ecusta Land",
+    text: "A highly visible landscape of sunflowers, native planting, pollinator habitat, and public beauty — something people can recognize, photograph, visit, and support.",
+  },
+  {
+    title: "Wellness by Design",
+    image: "/images/wellness-sacred-geometry.svg",
+    alt: "Sacred geometry wellness center concept with sunflower pattern, mountains, and gathering space",
+    text: "A calm wellness-center concept using circles, spirals, sunflower geometry, gardens, paths, and gathering spaces as a design language for harmony and orientation.",
+  },
+  {
+    title: "Trails, Water, and Public Access",
+    image: "/images/ecusta-sunflower-geometry.svg",
+    alt: "Nature, trail, river, mountains, and sunflower concept for public access at Ecusta",
+    text: "A future tied to the Ecusta Trail, Pisgah Forest, waterfalls, walking paths, biking, family recreation, education, and outdoor connection.",
+  },
 ];
 
 const moratoriumFacts = [
@@ -149,7 +172,7 @@ export default function Home() {
       <section className="hero">
         <nav className="nav" aria-label="Main navigation">
           <a href="#vision">Vision</a>
-          <a href="#imagine">Imagine</a>
+          <a href="#gallery">Gallery</a>
           <a href="#moratorium">Moratorium</a>
           <a href="#two-futures">Two Futures</a>
           <a href="#bloom">Bloom to Benefit</a>
@@ -167,8 +190,8 @@ export default function Home() {
               revitalization instead of high-impact digital infrastructure.
             </p>
             <div className="hero-actions">
-              <a className="button primary" href="#imagine">Imagine the place</a>
-              <a className="button secondary" href="/take-action">How to help</a>
+              <a className="button primary" href={petitionUrl} target="_blank" rel="noopener noreferrer">Sign the petition</a>
+              <a className="button secondary" href="#gallery">View the vision</a>
               <a className="button secondary" href="/contact">Contact Amy</a>
             </div>
           </div>
@@ -200,6 +223,28 @@ export default function Home() {
             <article className="pillar-card" key={title}>
               <h3>{title}</h3>
               <p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="gallery" className="section gallery-section">
+        <div className="section-heading centered">
+          <p className="eyebrow">Vision Gallery</p>
+          <h2>What Ecusta could feel like when the land becomes public, beautiful, and useful again.</h2>
+          <p>
+            These concept visuals are not final site plans. They show the design direction: sunflowers,
+            sacred geometry, wellness gardens, trails, native planting, water, mountain identity, and public access.
+          </p>
+        </div>
+        <div className="gallery-grid">
+          {visionGallery.map((item) => (
+            <article className="gallery-card" key={item.title}>
+              <img src={item.image} alt={item.alt} />
+              <div>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
             </article>
           ))}
         </div>
@@ -424,14 +469,15 @@ export default function Home() {
       <section id="action" className="section action">
         <div>
           <p className="eyebrow">Take Action</p>
-          <h2>Ask decision-makers to compare the full community value of each path.</h2>
+          <h2>Sign the petition and ask decision-makers to compare the full community value of each path.</h2>
           <p>
             Ask for public records, tract-specific clarity, utility estimates, noise and heat analysis,
             brownfields restrictions, and a genuine comparison between a high-intensity data-center path
             and a wellness-centered revitalization plan.
           </p>
           <div className="hero-actions">
-            <a className="button primary" href="/take-action">Open the action page</a>
+            <a className="button primary" href={petitionUrl} target="_blank" rel="noopener noreferrer">Sign the petition</a>
+            <a className="button secondary" href="/take-action">Open the action page</a>
             <a className="button secondary" href="/contact">Contact Amy Turner</a>
           </div>
         </div>
@@ -450,7 +496,7 @@ export default function Home() {
 
       <footer className="footer">
         <p>Ecusta Land</p>
-        <p><a href="/take-action">Take Action</a> · <a href="/contact">Contact Amy Turner</a></p>
+        <p><a href={petitionUrl} target="_blank" rel="noopener noreferrer">Petition</a> · <a href="/take-action">Take Action</a> · <a href="/contact">Contact Amy Turner</a></p>
       </footer>
     </main>
   );

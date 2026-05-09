@@ -153,8 +153,8 @@ export default function Home() {
           <a href="#moratorium">Moratorium</a>
           <a href="#two-futures">Two Futures</a>
           <a href="#bloom">Bloom to Benefit</a>
-          <a href="#records">Records</a>
-          <a href="#action">Take Action</a>
+          <a href="/take-action">Take Action</a>
+          <a href="/contact">Contact</a>
         </nav>
 
         <div className="hero-grid">
@@ -168,7 +168,8 @@ export default function Home() {
             </p>
             <div className="hero-actions">
               <a className="button primary" href="#imagine">Imagine the place</a>
-              <a className="button secondary" href="#two-futures">Compare the two futures</a>
+              <a className="button secondary" href="/take-action">How to help</a>
+              <a className="button secondary" href="/contact">Contact Amy</a>
             </div>
           </div>
 
@@ -429,6 +430,10 @@ export default function Home() {
             brownfields restrictions, and a genuine comparison between a high-intensity data-center path
             and a wellness-centered revitalization plan.
           </p>
+          <div className="hero-actions">
+            <a className="button primary" href="/take-action">Open the action page</a>
+            <a className="button secondary" href="/contact">Contact Amy Turner</a>
+          </div>
         </div>
         <div className="action-card">
           <h3>Ask for:</h3>
@@ -445,7 +450,7 @@ export default function Home() {
 
       <footer className="footer">
         <p>Ecusta Land</p>
-        <p>Sunflower Power for restoration, beautification, wellness, and community revitalization.</p>
+        <p><a href="/take-action">Take Action</a> · <a href="/contact">Contact Amy Turner</a></p>
       </footer>
     </main>
   );

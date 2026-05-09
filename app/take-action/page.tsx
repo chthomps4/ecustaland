@@ -35,6 +35,11 @@ export default function TakeActionPage() {
   return (
     <main className="take-action-page">
       <section className="section action-hero">
+        <nav className="nav page-nav" aria-label="Page navigation">
+          <a href="/">Home</a>
+          <a href="/take-action">Take Action</a>
+          <a href="/contact">Contact</a>
+        </nav>
         <div className="section-heading">
           <p className="eyebrow">Take Action</p>
           <h1>Help make Ecusta a place of wellness, beauty, trails, education, and public benefit.</h1>
@@ -42,9 +47,12 @@ export default function TakeActionPage() {
             The most useful public action is calm, specific, and evidence-based: ask for documents,
             ask for comparisons, and ask whether each proposal truly fits Brevard’s future.
           </p>
-          <a className="button primary" href="https://livingdesigntechnology.com/harmonypt" target="_blank" rel="noopener noreferrer">
-            Explore HarmonyPT wellness design resource
-          </a>
+          <div className="hero-actions">
+            <a className="button primary" href="https://livingdesigntechnology.com/harmonypt" target="_blank" rel="noopener noreferrer">
+              Explore HarmonyPT wellness design resource
+            </a>
+            <a className="button secondary" href="/contact">Contact Amy Turner</a>
+          </div>
         </div>
       </section>
 
@@ -65,9 +73,11 @@ export default function TakeActionPage() {
 
       <section className="section geometry-section">
         <div className="geometry-grid">
-          <div className="geometry-art" aria-hidden="true">
-            <div className="geometry-flower" />
-          </div>
+          <img
+            className="wellness-image"
+            src="/images/wellness-sacred-geometry.svg"
+            alt="Sacred geometry wellness center concept with sunflower pattern, mountain landscape, river, and gathering design"
+          />
           <div>
             <p className="eyebrow">Wellness Center Vision</p>
             <h2>Sacred geometry can give the wellness concept a visual language.</h2>

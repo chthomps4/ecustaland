@@ -40,15 +40,21 @@ const wellnessPrinciples = [
 export default function TakeActionPage() {
   return (
     <main className="take-action-page">
+      <a className="floating-petition" href={petitionUrl} target="_blank" rel="noopener noreferrer">
+        Sign Petition
+      </a>
+
       <section className="section action-hero">
         <nav className="nav page-nav" aria-label="Page navigation">
           <a href="/">Home</a>
+          <a href="/vision-gallery">Gallery</a>
+          <a href="/research">Research</a>
           <a href="/take-action">Take Action</a>
           <a href="/contact">Contact</a>
         </nav>
         <div className="section-heading">
           <p className="eyebrow">Take Action</p>
-          <h1>Help make Ecusta a place of wellness, beauty, trails, education, and public benefit.</h1>
+          <h1>Support the Sunflower Vision.</h1>
           <p className="hero-copy">
             The most useful public action is calm, specific, and evidence-based: sign the petition,
             ask for documents, ask for comparisons, and ask whether each proposal truly fits Brevard’s future.
@@ -57,9 +63,7 @@ export default function TakeActionPage() {
             <a className="button primary" href={petitionUrl} target="_blank" rel="noopener noreferrer">
               Sign the Change.org petition
             </a>
-            <a className="button secondary" href="https://livingdesigntechnology.com/harmonypt" target="_blank" rel="noopener noreferrer">
-              Explore HarmonyPT
-            </a>
+            <a className="button secondary" href="/research">Research & documents</a>
             <a className="button secondary" href="/contact">Contact Amy Turner</a>
           </div>
         </div>
@@ -84,7 +88,7 @@ export default function TakeActionPage() {
       <section className="section">
         <div className="section-heading centered">
           <p className="eyebrow">Public Questions</p>
-          <h2>What to ask decision-makers before any high-impact use moves forward.</h2>
+          <h2>What to ask before any high-impact use moves forward.</h2>
         </div>
         <div className="resource-grid">
           {actionItems.map((item) => (
@@ -138,15 +142,20 @@ export default function TakeActionPage() {
           </p>
         </div>
         <div className="action-card">
-          <h3>Share this idea:</h3>
+          <h3>Useful links:</h3>
           <ul>
-            <li>Ecusta should be revitalized in a way people can use and enjoy.</li>
-            <li>Public records should be easy to find and understand.</li>
-            <li>Sunflowers and native planting can support beauty, education, habitat, and land stewardship.</li>
-            <li>A wellness-centered plan better matches Brevard’s identity than a closed industrial data center.</li>
+            <li><a href={petitionUrl} target="_blank" rel="noopener noreferrer">Sign the Change.org petition</a></li>
+            <li><a href="/vision-gallery">View the Vision Gallery</a></li>
+            <li><a href="/research">Open Research & Documents</a></li>
+            <li><a href="/contact">Contact Amy Turner</a></li>
           </ul>
         </div>
       </section>
+
+      <footer className="footer">
+        <p>Ecusta Land</p>
+        <p><a href={petitionUrl} target="_blank" rel="noopener noreferrer">Petition</a> · <a href="/vision-gallery">Gallery</a> · <a href="/research">Research</a> · <a href="/take-action">Take Action</a> · <a href="/contact">Contact Amy Turner</a></p>
+      </footer>
     </main>
   );
 }

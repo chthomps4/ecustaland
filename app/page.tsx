@@ -14,6 +14,27 @@ const visionPillars = [
   ["Education", "A living classroom for phytomanagement, native planting, brownfield history, ecology, art, and practical land stewardship."],
 ];
 
+const interestCards = [
+  ["Walk through bloom season", "Imagine a public trail moving through sunflower fields, native grasses, pollinator habitat, mountain views, and interpretive signs that explain the land’s past and future."],
+  ["Make Ecusta a destination", "Families, photographers, cyclists, seniors, school groups, wellness visitors, artists, and local businesses could all have a reason to gather around the site."],
+  ["Turn a scar into a classroom", "Instead of hiding the brownfield story, Ecusta could teach phytomanagement, ecology, responsible reuse, local history, and how communities repair complicated places."],
+  ["Create a seasonal economy", "Bloom walks, harvest festivals, bike rentals, local art markets, wellness classes, educational tours, and sunflower products could support small local opportunity."],
+];
+
+const moratoriumFacts = [
+  ["What happened", "Brevard adopted Ordinance No. 2026-11 on March 16, 2026, creating a temporary moratorium on accepting, processing, and approving applications for data centers, cryptomining facilities, server farms, and similar high-impact digital infrastructure."],
+  ["Why it happened", "The ordinance says data centers and similar facilities were not specifically addressed in Brevard’s Unified Development Ordinance and can create significant demands on electrical and water infrastructure, noise, heat, and land-use impacts."],
+  ["How long it lasted", "The ordinance states that the moratorium expires July 2, 2026 unless City Council ends it earlier."],
+  ["What it means here", "The moratorium does not prove an Ecusta data center is approved. It does show that the city considered this category of development important enough to pause while zoning standards were reviewed."],
+];
+
+const whySunflowers = [
+  ["Visible hope", "People understand sunflowers immediately. They are bright, memorable, photographic, and emotionally opposite of abandonment."],
+  ["Pollinator support", "Sunflower fields and native plantings can support bees, birds, butterflies, and habitat when designed responsibly."],
+  ["Educational value", "They create a simple entry point for explaining soil health, phytomanagement, seed cycles, land stewardship, and brownfield caution."],
+  ["Harvest potential", "At season’s end, seed heads can become part of educational programming, seed saving, local partnerships, and biodiesel feasibility exploration."],
+];
+
 const twoFutures = [
   {
     title: "Sunflower Power Vision",
@@ -46,6 +67,13 @@ const bloomCycle = [
   ["Bloom", "Create a seasonal destination for walking, photography, families, local events, and community pride."],
   ["Harvest", "Collect seed heads at the end of the season where appropriate and safe, with handling guided by site conditions."],
   ["Reuse", "Explore seed saving, education, local partnerships, and biodiesel potential as part of a regenerative cycle."],
+];
+
+const localFit = [
+  "Brevard is already known for outdoor access, trails, waterfalls, music, arts, and small-town character.",
+  "The Ecusta Trail and Pisgah Forest connection make public recreation a natural fit.",
+  "A wellness and beautification project gives residents and visitors something they can actually experience.",
+  "A revitalized landscape can honor industrial history while moving the site toward health, usefulness, and public pride.",
 ];
 
 const programElements = [
@@ -81,8 +109,12 @@ const faqs = [
     a: "No. The primary focus is a positive revitalization vision: sunflowers, wellness, beautification, recreation, education, and public benefit. Data-center concerns are included so the community can compare two very different futures for the land.",
   },
   {
+    q: "Why would people care about sunflowers?",
+    a: "Because they make renewal visible. A sunflower field can become a landmark, a seasonal destination, a learning tool, a pollinator habitat, a photography site, and a symbol that the land is being brought back into public life.",
+  },
+  {
     q: "Is a data center officially approved for Ecusta?",
-    a: "Based on the current research dossier, official sources confirm city-level discussion and a temporary moratorium while regulations were studied. They do not confirm a public Ecusta-specific permit package, named developer, or approved data-center project.",
+    a: "Based on the current research dossier and official records checked so far, the answer is not confirmed. What is confirmed is that Brevard adopted a temporary moratorium while reviewing how to regulate data centers and similar facilities.",
   },
   {
     q: "Can sunflowers clean the whole site?",
@@ -98,12 +130,27 @@ function EvidenceBadge({ children }: { children: React.ReactNode }) {
   return <span className="evidence-badge">Evidence {children}</span>;
 }
 
+function SceneGraphic({ variant }: { variant: "hero" | "trail" | "wellness" | "harvest" }) {
+  return (
+    <div className={`scene-graphic scene-${variant}`} aria-hidden="true">
+      <div className="mountains" />
+      <div className="sun" />
+      <div className="river" />
+      <div className="path" />
+      <div className="mill"><span /><span /><span /></div>
+      <div className="sunflowers"><span /><span /><span /><span /><span /></div>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <main>
       <section className="hero">
         <nav className="nav" aria-label="Main navigation">
           <a href="#vision">Vision</a>
+          <a href="#imagine">Imagine</a>
+          <a href="#moratorium">Moratorium</a>
           <a href="#two-futures">Two Futures</a>
           <a href="#bloom">Bloom to Benefit</a>
           <a href="#records">Records</a>
@@ -120,12 +167,13 @@ export default function Home() {
               revitalization instead of high-impact digital infrastructure.
             </p>
             <div className="hero-actions">
-              <a className="button primary" href="#vision">Explore the vision</a>
+              <a className="button primary" href="#imagine">Imagine the place</a>
               <a className="button secondary" href="#two-futures">Compare the two futures</a>
             </div>
           </div>
 
           <aside className="hero-card sunflower-card">
+            <SceneGraphic variant="hero" />
             <p className="card-label">The focal point</p>
             <h2>Restoration. Beautification. Vitality.</h2>
             <p>
@@ -156,6 +204,31 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="imagine" className="section imagine-section">
+        <div className="section-heading centered">
+          <p className="eyebrow">Imagine Ecusta Differently</p>
+          <h2>Not a fenced-off utility burden. A place people can actually use.</h2>
+          <p>
+            The vision becomes powerful when people can picture themselves there: walking, learning,
+            taking photos, riding bikes, listening to music, bringing kids, meeting friends, and seeing
+            the former mill land become beautiful again.
+          </p>
+        </div>
+        <div className="image-row">
+          <figure><SceneGraphic variant="trail" /><figcaption>Trails through sunflowers and native planting.</figcaption></figure>
+          <figure><SceneGraphic variant="wellness" /><figcaption>Wellness, gathering, arts, and public use.</figcaption></figure>
+          <figure><SceneGraphic variant="harvest" /><figcaption>Seasonal harvest, education, and reuse potential.</figcaption></figure>
+        </div>
+        <div className="interest-grid">
+          {interestCards.map(([title, text]) => (
+            <article className="interest-card" key={title}>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="section sunflower power-section">
         <div className="section-heading">
           <p className="eyebrow">Sunflower Power</p>
@@ -175,6 +248,46 @@ export default function Home() {
               to clean the entire brownfield site.
             </p>
           </div>
+        </div>
+        <div className="why-grid">
+          {whySunflowers.map(([title, text]) => (
+            <article className="why-card" key={title}>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="moratorium" className="section moratorium-section">
+        <div className="section-heading centered">
+          <p className="eyebrow">2026 Moratorium</p>
+          <h2>Brevard already paused to study data centers and similar high-impact digital uses.</h2>
+          <p>
+            Ordinance No. 2026-11 is important because it shows this is not just a matter of taste.
+            The city formally recognized that data centers, cryptomining, server farms, and similar facilities
+            needed clearer rules before new approvals moved forward.
+          </p>
+        </div>
+        <div className="moratorium-grid">
+          {moratoriumFacts.map(([title, text]) => (
+            <article className="moratorium-card" key={title}>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section local-fit-section">
+        <div className="local-fit-card">
+          <p className="eyebrow">Why This Fits Brevard</p>
+          <h2>Ecusta’s next chapter should feel like it belongs here.</h2>
+          <ul>
+            {localFit.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -264,9 +377,8 @@ export default function Home() {
               and transparent records.
             </p>
             <p>
-              City records also show that Brevard has treated data centers and similar facilities as
-              a serious land-use question because of potential demands involving power, water, heat,
-              noise, and infrastructure.
+              City records show that Brevard treated data centers and similar facilities as a serious
+              land-use question because of infrastructure, utility, heat, noise, and regulatory concerns.
             </p>
           </div>
           <div className="label-panel compact">

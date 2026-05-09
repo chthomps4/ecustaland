@@ -50,12 +50,44 @@ export const metadata: Metadata = {
     siteName: "Ecusta Land",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/images/ecusta-sunflower-geometry.svg",
+        width: 1200,
+        height: 630,
+        alt: "Sunflower, mountain, and sacred geometry concept graphic for Ecusta Land",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Ecusta Land | Sunflower Power for Brevard",
     description:
       "A wellness and beautification vision for Ecusta rooted in sunflowers, trails, education, and community revitalization.",
+    images: ["/images/ecusta-sunflower-geometry.svg"],
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Ecusta Land",
+  url: "https://ecustaland.org",
+  description:
+    "A wellness, beautification, trails, sunflowers, and community revitalization vision for the former Ecusta mill site in Brevard / Pisgah Forest, North Carolina.",
+  inLanguage: "en-US",
+  about: [
+    "Ecusta mill site",
+    "Brevard North Carolina",
+    "brownfield revitalization",
+    "sunflower fields",
+    "wellness-centered public space",
+    "data center moratorium",
+  ],
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://ecustaland.org/?q={search_term_string}",
+    "query-input": "required name=search_term_string",
   },
 };
 
@@ -66,7 +98,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

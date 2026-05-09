@@ -60,6 +60,12 @@ const programElements = [
   "Seasonal events, harvest festivals, and local business opportunity",
 ];
 
+const communityAsks = [
+  ["Show the documents", "Publish any Ecusta-specific development filings, utility estimates, environmental reviews, noise studies, heat plans, and brownfields constraints in plain language."],
+  ["Compare the futures", "Require a real side-by-side comparison between a high-impact data-center use and a community-serving revitalization plan."],
+  ["Protect the fit", "Measure each proposal against Brevard’s identity: outdoor recreation, arts, wellness, tourism, natural beauty, and long-term public benefit."],
+];
+
 const timeline = [
   ["1938", "Davidson River site selected and land assembled."],
   ["1939", "Ecusta plant construction completed and operations begin."],
@@ -225,6 +231,21 @@ export default function Home() {
         <div className="program-cloud">
           {programElements.map((item) => (
             <span key={item}>{item}</span>
+          ))}
+        </div>
+      </section>
+
+      <section className="section asks-section">
+        <div className="section-heading centered">
+          <p className="eyebrow">Public Clarity</p>
+          <h2>Before any high-impact use moves forward, the community deserves the full picture.</h2>
+        </div>
+        <div className="asks-grid">
+          {communityAsks.map(([title, text]) => (
+            <article className="ask-card" key={title}>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
           ))}
         </div>
       </section>

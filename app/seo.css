@@ -1,0 +1,99 @@
+.seo-link-card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  border-radius: 999px;
+  padding: 0.9rem 1.2rem;
+  background: var(--gold);
+  color: var(--deep);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.geometry-section {
+  background: linear-gradient(180deg, #fffaf0, #f6f2e7);
+}
+
+.geometry-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: center;
+}
+
+.geometry-art {
+  min-height: 420px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: radial-gradient(circle at center, rgba(240, 217, 130, 0.34), rgba(73, 107, 67, 0.16), rgba(255, 250, 240, 0.92));
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.geometry-art::before {
+  content: "";
+  position: absolute;
+  inset: 12%;
+  border: 2px solid rgba(23, 35, 29, 0.24);
+  border-radius: 50%;
+}
+
+.geometry-art::after {
+  content: "";
+  position: absolute;
+  inset: 26%;
+  transform: rotate(45deg);
+  border: 2px solid rgba(209, 164, 54, 0.48);
+  border-radius: 18%;
+}
+
+.geometry-flower {
+  position: absolute;
+  inset: 20%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, #5a3a1e 0 9%, transparent 10%), radial-gradient(ellipse at 50% 14%, rgba(240, 217, 130, 0.75) 0 12%, transparent 13%), radial-gradient(ellipse at 86% 50%, rgba(240, 217, 130, 0.75) 0 12%, transparent 13%), radial-gradient(ellipse at 50% 86%, rgba(240, 217, 130, 0.75) 0 12%, transparent 13%), radial-gradient(ellipse at 14% 50%, rgba(240, 217, 130, 0.75) 0 12%, transparent 13%);
+}
+
+.take-action-page {
+  background: var(--bg);
+}
+
+.action-hero {
+  background: var(--deep);
+  color: var(--paper);
+}
+
+.action-hero p {
+  color: rgba(255, 250, 240, 0.76);
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.resource-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 250, 240, 0.86);
+  box-shadow: var(--shadow);
+  padding: 1.35rem;
+}
+
+.resource-card h3 {
+  color: var(--green);
+}
+
+@media (max-width: 900px) {
+  .geometry-grid,
+  .resource-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .geometry-art {
+    min-height: 320px;
+  }
+}

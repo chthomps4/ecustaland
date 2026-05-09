@@ -41,16 +41,21 @@ const galleryItems = [
 export default function VisionGalleryPage() {
   return (
     <main className="take-action-page">
+      <a className="floating-petition" href={petitionUrl} target="_blank" rel="noopener noreferrer">
+        Sign Petition
+      </a>
+
       <section className="section action-hero">
         <nav className="nav page-nav" aria-label="Page navigation">
           <a href="/">Home</a>
           <a href="/vision-gallery">Gallery</a>
+          <a href="/research">Research</a>
           <a href="/take-action">Take Action</a>
           <a href="/contact">Contact</a>
         </nav>
         <div className="section-heading">
           <p className="eyebrow">Vision Gallery</p>
-          <h1>See the Ecusta Land vision in pictures.</h1>
+          <h1>See the future before it is decided.</h1>
           <p className="hero-copy">
             These are concept visuals, not final site plans. They help people picture the direction:
             sunflowers, trails, wellness, sacred geometry, native planting, water, mountains, harvest,
@@ -58,6 +63,7 @@ export default function VisionGalleryPage() {
           </p>
           <div className="hero-actions">
             <a className="button primary" href={petitionUrl} target="_blank" rel="noopener noreferrer">Sign the petition</a>
+            <a className="button secondary" href="/research">Research & documents</a>
             <a className="button secondary" href="/contact">Contact Amy Turner</a>
           </div>
         </div>
@@ -90,11 +96,17 @@ export default function VisionGalleryPage() {
           <h3>Useful links:</h3>
           <ul>
             <li><a href={petitionUrl} target="_blank" rel="noopener noreferrer">Sign the Change.org petition</a></li>
+            <li><a href="/research">Open Research & Documents</a></li>
             <li><a href="/take-action">Open the Take Action page</a></li>
             <li><a href="/contact">Contact Amy Turner</a></li>
           </ul>
         </div>
       </section>
+
+      <footer className="footer">
+        <p>Ecusta Land</p>
+        <p><a href={petitionUrl} target="_blank" rel="noopener noreferrer">Petition</a> · <a href="/vision-gallery">Gallery</a> · <a href="/research">Research</a> · <a href="/take-action">Take Action</a> · <a href="/contact">Contact Amy Turner</a></p>
+      </footer>
     </main>
   );
 }

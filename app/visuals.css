@@ -1,0 +1,277 @@
+.imagine-section {
+  background: linear-gradient(180deg, #f6f2e7, #fffaf0);
+}
+
+.image-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.image-row figure {
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.image-row figcaption {
+  padding: 0.9rem 1rem 1rem;
+  color: var(--muted);
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.interest-grid,
+.why-grid,
+.moratorium-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.interest-grid,
+.why-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.interest-card,
+.why-card,
+.moratorium-card,
+.local-fit-card {
+  border: 1px solid var(--line);
+  background: rgba(255, 250, 240, 0.82);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.35rem;
+}
+
+.interest-card h3,
+.why-card h3,
+.moratorium-card h3 {
+  color: var(--green);
+}
+
+.moratorium-section {
+  background:
+    radial-gradient(circle at 10% 10%, rgba(111, 51, 40, 0.12), transparent 25%),
+    linear-gradient(180deg, #fffaf0, #f2eadc);
+}
+
+.moratorium-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.moratorium-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.moratorium-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  background: linear-gradient(90deg, var(--warning), var(--gold));
+}
+
+.local-fit-section {
+  background: var(--deep);
+  color: var(--paper);
+}
+
+.local-fit-card {
+  max-width: 1120px;
+  margin: 0 auto;
+  background:
+    radial-gradient(circle at 90% 15%, rgba(240, 217, 130, 0.24), transparent 20%),
+    rgba(255, 250, 240, 0.08);
+  border-color: rgba(255, 250, 240, 0.16);
+}
+
+.local-fit-card p,
+.local-fit-card li {
+  color: rgba(255, 250, 240, 0.78);
+}
+
+.local-fit-card h2 {
+  color: var(--paper);
+}
+
+.local-fit-card ul {
+  margin: 1.5rem 0 0;
+  padding-left: 1.2rem;
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.local-fit-card li {
+  margin-bottom: 0.8rem;
+  line-height: 1.7;
+}
+
+.scene-graphic {
+  position: relative;
+  min-height: 245px;
+  border-radius: 20px;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255, 218, 132, 0.88), rgba(133, 166, 121, 0.9) 48%, rgba(43, 84, 55, 0.95));
+  box-shadow: inset 0 -60px 90px rgba(16, 32, 22, 0.22);
+}
+
+.hero-card .scene-graphic {
+  margin-bottom: 1.25rem;
+  min-height: 220px;
+}
+
+.mountains,
+.sun,
+.river,
+.path,
+.mill,
+.sunflowers,
+.sunflowers span {
+  position: absolute;
+}
+
+.mountains {
+  left: -5%;
+  right: -5%;
+  bottom: 34%;
+  height: 42%;
+  background:
+    radial-gradient(ellipse at 20% 100%, #496b43 0 35%, transparent 36%),
+    radial-gradient(ellipse at 52% 100%, #38583d 0 42%, transparent 43%),
+    radial-gradient(ellipse at 82% 100%, #547351 0 38%, transparent 39%);
+  opacity: 0.88;
+}
+
+.sun {
+  right: 11%;
+  top: 12%;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff8c7, #f0d982 55%, rgba(240, 217, 130, 0));
+  box-shadow: 0 0 90px 40px rgba(240, 217, 130, 0.55);
+}
+
+.river {
+  right: -8%;
+  bottom: 0;
+  width: 55%;
+  height: 36%;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.6), transparent 12% 22%, rgba(255,255,255,0.5) 23% 31%, transparent 32%),
+    linear-gradient(135deg, rgba(85, 122, 138, 0.8), rgba(28, 62, 65, 0.9));
+  clip-path: polygon(18% 0, 100% 12%, 100% 100%, 0 100%);
+  opacity: 0.92;
+}
+
+.path {
+  left: 0;
+  bottom: -8%;
+  width: 48%;
+  height: 42%;
+  background: linear-gradient(135deg, rgba(238, 221, 184, 0.9), rgba(128, 116, 88, 0.68));
+  clip-path: polygon(0 100%, 20% 20%, 34% 18%, 60% 100%);
+  opacity: 0.84;
+}
+
+.mill {
+  left: 33%;
+  bottom: 34%;
+  width: 28%;
+  height: 20%;
+  border-radius: 6px 6px 0 0;
+  background: linear-gradient(180deg, #7a4f35, #4c3128);
+  box-shadow: 36px 10px 0 rgba(58, 52, 42, 0.75), 82px 2px 0 rgba(65, 60, 50, 0.62);
+}
+
+.mill::after {
+  content: "";
+  position: absolute;
+  left: 42%;
+  bottom: 65%;
+  width: 12px;
+  height: 92px;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(90deg, #6a4934, #2f231e);
+}
+
+.mill span {
+  width: 9px;
+  height: 12px;
+  background: rgba(240, 217, 130, 0.65);
+  top: 18px;
+}
+
+.mill span:nth-child(1) { left: 16px; }
+.mill span:nth-child(2) { left: 38px; }
+.mill span:nth-child(3) { left: 60px; }
+
+.sunflowers {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 45%;
+  background:
+    radial-gradient(circle at 8% 72%, #d1a436 0 3%, transparent 4%),
+    radial-gradient(circle at 17% 58%, #f0d982 0 3%, transparent 4%),
+    radial-gradient(circle at 29% 72%, #d1a436 0 3%, transparent 4%),
+    radial-gradient(circle at 67% 65%, #f0d982 0 3%, transparent 4%),
+    radial-gradient(circle at 82% 77%, #d1a436 0 3%, transparent 4%);
+}
+
+.sunflowers span {
+  bottom: 12px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, #4b2b17 0 24%, transparent 25%),
+    conic-gradient(from 10deg, #f0d982, #d1a436, #f0d982, #d1a436, #f0d982);
+}
+
+.sunflowers span:nth-child(1) { left: 7%; transform: scale(1.25); }
+.sunflowers span:nth-child(2) { left: 21%; bottom: 34px; transform: scale(0.8); }
+.sunflowers span:nth-child(3) { left: 48%; bottom: 24px; transform: scale(1.05); }
+.sunflowers span:nth-child(4) { right: 24%; bottom: 18px; transform: scale(0.9); }
+.sunflowers span:nth-child(5) { right: 7%; bottom: 42px; transform: scale(1.18); }
+
+.scene-wellness {
+  background:
+    linear-gradient(180deg, rgba(255, 225, 156, 0.9), rgba(128, 157, 106, 0.9) 45%, rgba(49, 82, 56, 0.94));
+}
+
+.scene-harvest {
+  background:
+    linear-gradient(180deg, rgba(247, 205, 121, 0.88), rgba(151, 132, 80, 0.78) 50%, rgba(68, 79, 44, 0.95));
+}
+
+@media (max-width: 1100px) {
+  .interest-grid,
+  .why-grid,
+  .moratorium-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .image-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .interest-grid,
+  .why-grid,
+  .moratorium-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .local-fit-card ul {
+    columns: 1;
+  }
+}

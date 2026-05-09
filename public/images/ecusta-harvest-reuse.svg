@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Ecusta harvest and reuse concept</title>
+  <desc id="desc">A concept image showing sunflower harvest, seed baskets, education, native planting, mountains, and regenerative reuse.</desc>
+  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fffaf0"/><stop offset="0.5" stop-color="#f0d982"/><stop offset="1" stop-color="#6f5b2f"/></linearGradient></defs>
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <circle cx="1085" cy="145" r="110" fill="#fff8c7" opacity="0.7"/>
+  <path d="M0 430 C210 300 340 365 520 250 C710 125 835 330 1000 225 C1130 140 1260 230 1400 135 L1400 900 L0 900 Z" fill="#102016" opacity="0.34"/>
+  <path d="M0 565 C250 465 435 520 650 420 C880 315 1050 520 1400 390 L1400 900 L0 900 Z" fill="#1c3424" opacity="0.5"/>
+  <path d="M0 735 C280 690 480 750 700 705 C940 655 1110 745 1400 675 L1400 900 L0 900 Z" fill="#496b43"/>
+  <rect x="185" y="560" width="420" height="210" rx="22" fill="#7a4f35" opacity="0.95"/>
+  <rect x="210" y="532" width="370" height="62" rx="18" fill="#a46f39"/>
+  <g fill="#d1a436">
+    <circle cx="270" cy="525" r="44"/><circle cx="350" cy="505" r="52"/><circle cx="455" cy="525" r="45"/><circle cx="530" cy="510" r="38"/>
+    <circle cx="815" cy="645" r="58"/><circle cx="920" cy="615" r="42"/><circle cx="1040" cy="675" r="55"/><circle cx="1150" cy="625" r="44"/>
+  </g>
+  <g fill="#5a3a1e" opacity="0.9"><circle cx="270" cy="525" r="18"/><circle cx="350" cy="505" r="20"/><circle cx="455" cy="525" r="18"/><circle cx="530" cy="510" r="15"/><circle cx="815" cy="645" r="22"/><circle cx="920" cy="615" r="16"/><circle cx="1040" cy="675" r="21"/><circle cx="1150" cy="625" r="16"/></g>
+  <path d="M190 665 C270 630 345 680 420 635 C505 585 550 650 610 610" fill="none" stroke="#f0d982" stroke-width="9" opacity="0.5"/>
+  <rect x="735" y="445" width="360" height="105" rx="18" fill="#fffaf0" opacity="0.75"/>
+  <path d="M760 505 L822 465 L880 505 L945 465 L1010 505 L1070 465" fill="none" stroke="#102016" stroke-width="7" opacity="0.45"/>
+  <text x="760" y="430" fill="#102016" font-family="Arial, sans-serif" font-size="26" font-weight="800">Seed • Education • Reuse</text>
+  <text x="70" y="92" fill="#102016" font-family="Arial, sans-serif" font-size="44" font-weight="800">Bloom to Benefit</text>
+  <text x="72" y="136" fill="#102016" font-family="Arial, sans-serif" font-size="24" opacity="0.82">Harvest • learning • stewardship • reuse</text>
+</svg>

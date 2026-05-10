@@ -137,7 +137,7 @@ export default function Home() {
         Sign Petition
       </a>
 
-      <section className="hero hero-with-photo">
+      <section className="hero hero-with-photo hero-split-polish">
         <nav className="nav" aria-label="Main navigation">
           <a href="#vision">Vision</a>
           <a href="#gallery">Gallery</a>
@@ -163,7 +163,7 @@ export default function Home() {
             </div>
           </div>
 
-          <aside className="hero-card photo-hero-card">
+          <aside className="hero-card photo-hero-card elevated-photo-card">
             <img
               className="hero-photo"
               src="/images/ecusta-photo-hero-valley.png"
@@ -176,6 +176,13 @@ export default function Home() {
             </p>
           </aside>
         </div>
+      </section>
+
+      <section className="visual-band" aria-label="Ecusta Land visual preview">
+        <img
+          src="/images/ecusta-photo-hero-valley.png"
+          alt="Wide view of the Ecusta Land sunflower, stream, trail, wellness, restored mill, and mountain vision at golden hour."
+        />
       </section>
 
       <section className="quick-facts" aria-label="Quick facts">

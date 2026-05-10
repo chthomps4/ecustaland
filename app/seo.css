@@ -31,6 +31,52 @@
   color: var(--gold-soft) !important;
 }
 
+.hero-with-photo .hero-grid {
+  align-items: center;
+}
+
+.photo-hero-card {
+  overflow: hidden;
+}
+
+.hero-photo,
+.feature-photo,
+.wellness-image {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: var(--paper);
+}
+
+.hero-photo {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin-bottom: 1.1rem;
+}
+
+.feature-photo {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.photo-feature-section,
+.concept-gallery-section {
+  background: linear-gradient(180deg, #fffaf0, #f6f2e7);
+}
+
+.photo-feature-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: center;
+}
+
+.photo-feature-grid.reverse {
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+}
+
 .quick-facts {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -84,6 +130,10 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
   background: var(--paper);
+}
+
+.photo-gallery-card img {
+  aspect-ratio: 16 / 10;
 }
 
 .gallery-card div {
@@ -188,15 +238,6 @@
   background: radial-gradient(circle at 50% 50%, #5a3a1e 0 9%, transparent 10%), radial-gradient(ellipse at 50% 14%, rgba(240, 217, 130, 0.75) 0 12%, transparent 13%), radial-gradient(ellipse at 86% 50%, rgba(240, 217, 130, 0.75) 0 12%, transparent 13%), radial-gradient(ellipse at 50% 86%, rgba(240, 217, 130, 0.75) 0 12%, transparent 13%), radial-gradient(ellipse at 14% 50%, rgba(240, 217, 130, 0.75) 0 12%, transparent 13%);
 }
 
-.wellness-image {
-  width: 100%;
-  display: block;
-  border-radius: var(--radius);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-  background: var(--paper);
-}
-
 .take-action-page {
   background: var(--bg);
 }
@@ -266,7 +307,9 @@
   .gallery-grid,
   .support-grid,
   .resource-grid,
-  .quick-facts {
+  .quick-facts,
+  .photo-feature-grid,
+  .photo-feature-grid.reverse {
     grid-template-columns: 1fr;
   }
 

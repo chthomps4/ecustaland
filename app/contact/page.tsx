@@ -67,8 +67,8 @@ export default function ContactPage() {
         <div className="geometry-grid">
           <img
             className="wellness-image"
-            src="/images/wellness-sacred-geometry.svg"
-            alt="Sacred geometry wellness center concept with sunflower pattern, mountain landscape, river, and gathering design"
+            src="/images/ecusta-photo-wellness-garden.png"
+            alt="Sacred-geometry wellness garden with meditation circle, sunflower plantings, stream, pavilion, and Blue Ridge mountain views."
           />
           <div>
             <p className="eyebrow">Amy Turner</p>
@@ -84,6 +84,24 @@ export default function ContactPage() {
               <a href={emailUrl}>vibetribewellness.studio@gmail.com</a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="section photo-feature-section">
+        <div className="photo-feature-grid reverse">
+          <div>
+            <p className="eyebrow">Picture the Ask</p>
+            <h2>Share the vision as a place, not just an idea.</h2>
+            <p>
+              The most persuasive version of Ecusta Land is visible: trails, stream edges, sunflowers, wellness gardens, gathering spaces, education, and careful public benefit.
+            </p>
+            <a className="seo-link-card" href="/vision-gallery">Open Vision Gallery</a>
+          </div>
+          <img
+            className="feature-photo"
+            src="/images/ecusta-photo-hero-valley.png"
+            alt="Sunflower fields, walking paths, stream, restored mill buildings, mountains, and sacred geometry at golden hour in the Ecusta vision."
+          />
         </div>
       </section>
 

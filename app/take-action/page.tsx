@@ -85,6 +85,24 @@ export default function TakeActionPage() {
         </div>
       </section>
 
+      <section className="section photo-feature-section">
+        <div className="photo-feature-grid">
+          <img
+            className="feature-photo"
+            src="/images/ecusta-photo-trail-stream.png"
+            alt="Walking and biking trail beside a clear stream with sunflowers, native grasses, wildflowers, and mountain views."
+          />
+          <div>
+            <p className="eyebrow">Make the Ask Visible</p>
+            <h2>People support what they can picture.</h2>
+            <p>
+              The trail-and-stream vision gives supporters a concrete image to share: a public landscape where beauty, movement, water, native planting, and community access are part of the future.
+            </p>
+            <a className="seo-link-card" href="/vision-gallery">Open Vision Gallery</a>
+          </div>
+        </div>
+      </section>
+
       <section className="section">
         <div className="section-heading centered">
           <p className="eyebrow">Public Questions</p>
@@ -109,8 +127,8 @@ export default function TakeActionPage() {
         <div className="geometry-grid">
           <img
             className="wellness-image"
-            src="/images/wellness-sacred-geometry.svg"
-            alt="Sacred geometry wellness center concept with sunflower pattern, mountain landscape, river, and gathering design"
+            src="/images/ecusta-photo-wellness-garden.png"
+            alt="Sacred-geometry wellness garden with meditation circle, sunflower plantings, stream, pavilion, and Blue Ridge mountain views."
           />
           <div>
             <p className="eyebrow">Wellness Center Vision</p>
@@ -130,6 +148,23 @@ export default function TakeActionPage() {
               Visit livingdesigntechnology.com/harmonypt
             </a>
           </div>
+        </div>
+      </section>
+
+      <section className="section photo-feature-section">
+        <div className="photo-feature-grid reverse">
+          <div>
+            <p className="eyebrow">Community Benefit</p>
+            <h2>Harvest, education, gathering, and reuse belong in the public conversation.</h2>
+            <p>
+              A community-centered Ecusta can include seasonal events, seed education, stewardship, local partnerships, and carefully evaluated reuse paths — all guided by site-specific safety and environmental controls.
+            </p>
+          </div>
+          <img
+            className="feature-photo"
+            src="/images/ecusta-photo-harvest-community.png"
+            alt="Community sunflower harvest and gathering space with baskets, pavilion, sacred geometry plaza, and mountain sunset."
+          />
         </div>
       </section>
 

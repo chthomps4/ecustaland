@@ -77,6 +77,24 @@ export default function ResearchPage() {
         </div>
       </section>
 
+      <section className="section photo-feature-section">
+        <div className="photo-feature-grid">
+          <img
+            className="feature-photo"
+            src="/images/ecusta-photo-hero-valley.png"
+            alt="Sunflower fields, walking paths, stream, restored mill buildings, mountains, and sacred geometry at golden hour in the Ecusta vision."
+          />
+          <div>
+            <p className="eyebrow">Why imagery belongs here</p>
+            <h2>The research keeps the vision honest. The imagery helps people understand what is at stake.</h2>
+            <p>
+              These visuals are concept images, not final site plans. They show the public-facing alternative being discussed: beauty, wellness, trails, water, native planting, education, and community access.
+            </p>
+            <a className="seo-link-card" href="/vision-gallery">View the Vision Gallery</a>
+          </div>
+        </div>
+      </section>
+
       <section className="section records-section">
         <div className="section-heading centered">
           <p className="eyebrow">Source Posture</p>

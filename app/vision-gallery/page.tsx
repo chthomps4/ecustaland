@@ -13,28 +13,51 @@ const petitionUrl = "https://www.change.org/p/beautifying-ecusta-paper-mill-fiel
 
 const galleryItems = [
   {
-    title: "The Sunflower Field",
+    title: "Sunflower Power Hero",
+    image: "/images/ecusta-photo-hero-valley.png",
+    alt: "Sunflower fields, walking paths, a stream, restored mill buildings, mountains, and sacred geometry at golden hour in the Ecusta vision.",
+    text: "The central public image: a restored landscape where the former mill identity becomes beauty, access, water, mountain light, and community pride.",
+  },
+  {
+    title: "Wellness Garden",
+    image: "/images/ecusta-photo-wellness-garden.png",
+    alt: "Sacred-geometry wellness garden with meditation circle, sunflower plantings, stream, pavilion, and Blue Ridge mountain views.",
+    text: "A wellness-centered garden with circular paths, sunflower beds, sacred-geometry design, calm gathering space, and a retreat-like pavilion.",
+  },
+  {
+    title: "Trail + Stream",
+    image: "/images/ecusta-photo-trail-stream.png",
+    alt: "Walking and biking trail beside a clear stream with sunflowers, native grasses, wildflowers, and mountain views.",
+    text: "A recreation-forward future connected to the Ecusta Trail, Pisgah Forest, cycling, walking, water, native planting, and everyday public use.",
+  },
+  {
+    title: "Harvest Community Center",
+    image: "/images/ecusta-photo-harvest-community.png",
+    alt: "Community sunflower harvest and gathering space with baskets, pavilion, sacred geometry plaza, and mountain sunset.",
+    text: "A seasonal public gathering place where bloom leads to learning, seed saving, events, stewardship, and careful reuse exploration.",
+  },
+];
+
+const conceptItems = [
+  {
+    title: "Sunflower Geometry Concept",
     image: "/images/ecusta-sunflower-geometry.svg",
     alt: "Sunflower field, mountain, river, and sacred geometry concept for Ecusta Land",
-    text: "The central public symbol: a visible field of renewal where the old industrial memory begins to feel beautiful, photographed, visited, and cared for again.",
   },
   {
-    title: "Wellness by Design",
+    title: "Wellness Design Concept",
     image: "/images/wellness-sacred-geometry.svg",
     alt: "Sacred geometry wellness center concept with sunflower pattern, mountains, and gathering space",
-    text: "A wellness-center design language built around circles, spirals, sunflower geometry, gardens, quiet gathering, walking paths, and mountain calm.",
   },
   {
-    title: "Trails Through Bloom",
+    title: "Trail Recreation Concept",
     image: "/images/ecusta-trail-recreation.svg",
     alt: "Walking and biking trail through sunflowers, native grasses, river, and Blue Ridge mountains",
-    text: "A recreation-forward future connected to the Ecusta Trail, Pisgah Forest, cycling, walking, families, water, and outdoor access.",
   },
   {
-    title: "Bloom to Benefit",
+    title: "Harvest Reuse Concept",
     image: "/images/ecusta-harvest-reuse.svg",
     alt: "Sunflower harvest, seed baskets, education, and regenerative reuse concept",
-    text: "A seasonal cycle where bloom leads to learning, stewardship, seed saving, community events, and carefully explored reuse opportunities.",
   },
 ];
 
@@ -70,13 +93,34 @@ export default function VisionGalleryPage() {
       </section>
 
       <section className="section gallery-section">
+        <div className="section-heading centered">
+          <p className="eyebrow">Primary Vision Images</p>
+          <h2>Four visual anchors for the Ecusta Land campaign.</h2>
+        </div>
         <div className="gallery-grid full-gallery-grid">
           {galleryItems.map((item) => (
-            <article className="gallery-card" key={item.title}>
+            <article className="gallery-card photo-gallery-card" key={item.title}>
               <img src={item.image} alt={item.alt} />
               <div>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section concept-gallery-section">
+        <div className="section-heading centered">
+          <p className="eyebrow">Design Concepts</p>
+          <h2>Supporting graphics for sacred geometry, trails, harvest, and land-use education.</h2>
+        </div>
+        <div className="gallery-grid concept-gallery-grid">
+          {conceptItems.map((item) => (
+            <article className="gallery-card" key={item.title}>
+              <img src={item.image} alt={item.alt} />
+              <div>
+                <h3>{item.title}</h3>
               </div>
             </article>
           ))}

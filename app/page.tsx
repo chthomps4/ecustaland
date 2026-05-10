@@ -17,26 +17,26 @@ const visionPillars = [
 const visionGallery = [
   {
     title: "The Sunflower Field",
-    image: "/images/ecusta-sunflower-geometry.svg",
-    alt: "Sunflower field, mountain, river, and sacred geometry concept for Ecusta Land",
-    text: "A bright public symbol of renewal: sunflowers, native planting, pollinator habitat, and beauty people can recognize immediately.",
+    image: "/images/ecusta-photo-hero-valley.png",
+    alt: "Sunflower fields, walking paths, a stream, restored mill buildings, mountains, and sacred geometry at golden hour in the Ecusta vision.",
+    text: "A bright public symbol of renewal: sunflowers, native planting, pollinator habitat, mountain light, and beauty people can recognize immediately.",
   },
   {
     title: "Wellness by Design",
-    image: "/images/wellness-sacred-geometry.svg",
-    alt: "Sacred geometry wellness center concept with sunflower pattern, mountains, and gathering space",
-    text: "A wellness-center concept shaped by gardens, circles, spirals, walking paths, gathering places, and sacred-geometry-inspired design language.",
+    image: "/images/ecusta-photo-wellness-garden.png",
+    alt: "Sacred-geometry wellness garden with meditation circle, sunflower plantings, stream, pavilion, and Blue Ridge mountain views.",
+    text: "A wellness-centered garden shaped by circles, sacred geometry, walking paths, gathering spaces, sunflower beds, and mountain calm.",
   },
   {
     title: "Trails Through Bloom",
-    image: "/images/ecusta-trail-recreation.svg",
-    alt: "Walking and biking trail through sunflowers, native grasses, river, and mountains",
-    text: "A public recreation future tied to the Ecusta Trail, Pisgah Forest, waterfalls, biking, walking, and family access.",
+    image: "/images/ecusta-photo-trail-stream.png",
+    alt: "Walking and biking trail beside a clear stream with sunflowers, native grasses, wildflowers, and mountain views.",
+    text: "A public recreation future tied to the Ecusta Trail, Pisgah Forest, waterways, biking, walking, family use, and outdoor access.",
   },
   {
     title: "Bloom to Benefit",
-    image: "/images/ecusta-harvest-reuse.svg",
-    alt: "Sunflower harvest, seed baskets, education, and regenerative reuse concept",
+    image: "/images/ecusta-photo-harvest-community.png",
+    alt: "Community sunflower harvest and gathering space with baskets, pavilion, sacred geometry plaza, and mountain sunset.",
     text: "A seasonal cycle where planting and bloom lead to learning, stewardship, seed saving, events, and carefully explored reuse opportunities.",
   },
 ];
@@ -130,19 +130,6 @@ const faqs = [
   },
 ];
 
-function SceneGraphic() {
-  return (
-    <div className="scene-graphic scene-hero" aria-hidden="true">
-      <div className="mountains" />
-      <div className="sun" />
-      <div className="river" />
-      <div className="path" />
-      <div className="mill"><span /><span /><span /></div>
-      <div className="sunflowers"><span /><span /><span /><span /><span /></div>
-    </div>
-  );
-}
-
 export default function Home() {
   return (
     <main>
@@ -150,7 +137,7 @@ export default function Home() {
         Sign Petition
       </a>
 
-      <section className="hero">
+      <section className="hero hero-with-photo">
         <nav className="nav" aria-label="Main navigation">
           <a href="#vision">Vision</a>
           <a href="#gallery">Gallery</a>
@@ -176,8 +163,12 @@ export default function Home() {
             </div>
           </div>
 
-          <aside className="hero-card sunflower-card">
-            <SceneGraphic />
+          <aside className="hero-card photo-hero-card">
+            <img
+              className="hero-photo"
+              src="/images/ecusta-photo-hero-valley.png"
+              alt="Sunflower fields, walking paths, stream, restored mill buildings, mountains, and sacred geometry at golden hour in the Ecusta vision."
+            />
             <p className="card-label">The focal point</p>
             <h2>Restoration. Beautification. Vitality.</h2>
             <p>
@@ -216,6 +207,24 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section photo-feature-section">
+        <div className="photo-feature-grid">
+          <img
+            className="feature-photo"
+            src="/images/ecusta-photo-trail-stream.png"
+            alt="Walking and biking trail beside a clear stream with sunflowers, native grasses, wildflowers, and mountain views."
+          />
+          <div>
+            <p className="eyebrow">Trails • Water • Public Access</p>
+            <h2>The vision becomes real when people can walk through it.</h2>
+            <p>
+              Sunflowers are the invitation. Trails, stream edges, native plantings, gathering places, and careful public access are what turn that invitation into a living community space.
+            </p>
+            <a className="seo-link-card" href="/vision-gallery">View more imagery</a>
+          </div>
+        </div>
+      </section>
+
       <section id="gallery" className="section gallery-section">
         <div className="section-heading centered">
           <p className="eyebrow">Vision Gallery</p>
@@ -227,7 +236,7 @@ export default function Home() {
         </div>
         <div className="gallery-grid">
           {visionGallery.map((item) => (
-            <article className="gallery-card" key={item.title}>
+            <article className="gallery-card photo-gallery-card" key={item.title}>
               <img src={item.image} alt={item.alt} />
               <div>
                 <h3>{item.title}</h3>
@@ -327,9 +336,19 @@ export default function Home() {
       </section>
 
       <section id="bloom" className="section bloom-section">
-        <div className="section-heading">
-          <p className="eyebrow">Bloom to Benefit</p>
-          <h2>A seasonal cycle of beauty, learning, harvest, and reuse.</h2>
+        <div className="photo-feature-grid reverse">
+          <div>
+            <p className="eyebrow">Bloom to Benefit</p>
+            <h2>A seasonal cycle of beauty, learning, harvest, and reuse.</h2>
+            <p>
+              Harvest should be framed carefully: education, stewardship, seed saving, events, local partnerships, and biodiesel feasibility exploration only where site-specific safety and handling are verified.
+            </p>
+          </div>
+          <img
+            className="feature-photo"
+            src="/images/ecusta-photo-harvest-community.png"
+            alt="Community sunflower harvest and gathering space with baskets, pavilion, sacred geometry plaza, and mountain sunset."
+          />
         </div>
         <div className="cycle-grid">
           {bloomCycle.map(([title, text], index) => (
@@ -340,10 +359,6 @@ export default function Home() {
             </article>
           ))}
         </div>
-        <p className="note">
-          Biodiesel should be framed as a potential partnership and education pathway, not a guaranteed revenue source,
-          until crop safety, yields, processing, and site-specific handling are verified.
-        </p>
       </section>
 
       <section className="section asks-section">

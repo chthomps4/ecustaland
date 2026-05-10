@@ -52,10 +52,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/ecusta-sunflower-geometry.svg",
-        width: 1200,
-        height: 630,
-        alt: "Sunflower, mountain, and sacred geometry concept graphic for Ecusta Land",
+        url: "/images/ecusta-photo-hero-valley.png",
+        width: 1672,
+        height: 941,
+        alt: "Sunflower fields, walking paths, stream, restored mill buildings, mountains, and sacred geometry at golden hour in the Ecusta Land vision",
       },
     ],
   },
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     title: "Ecusta Land | Sunflower Power for Brevard",
     description:
       "A wellness and beautification vision for Ecusta rooted in sunflowers, trails, education, and community revitalization.",
-    images: ["/images/ecusta-sunflower-geometry.svg"],
+    images: ["/images/ecusta-photo-hero-valley.png"],
   },
 };
 

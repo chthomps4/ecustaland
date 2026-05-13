@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://ecustaland.org"),
   title: {
     default: "Ecusta Land | Sunflower Power for Brevard",
-    template: "%s | Ecusta Land",
+    template: "%s",
   },
   description:
     "A sunflower, trails, wellness, and revitalization vision for the former Ecusta mill site in Brevard and Pisgah Forest, NC.",

@@ -25,20 +25,21 @@ export default function TohiPlanPage() {
   return (
     <main className="tohi-page">
       <style>{`
-        .tohi-page { background: #f6f2e7; color: #17231d; }
-        .tohi-hero { min-height: 82vh; padding: 1.25rem clamp(1rem, 5vw, 6rem) clamp(4rem, 8vw, 7rem); color: #fffaf0; background: radial-gradient(circle at 78% 18%, rgba(240,217,130,.42), transparent 18%), linear-gradient(135deg, #102016, #1c3424); }
+        .tohi-page { background: #f6f2e7; color: #17231d; overflow-wrap: anywhere; }
+        .tohi-page * { min-width: 0; }
+        .tohi-hero { min-height: 82vh; padding: clamp(3rem, 7vw, 6rem) clamp(1rem, 5vw, 6rem) clamp(4rem, 8vw, 7rem); color: #fffaf0; background: radial-gradient(circle at 78% 18%, rgba(240,217,130,.42), transparent 18%), linear-gradient(135deg, #102016, #1c3424); }
         .tohi-nav { display: flex; gap: 1rem; justify-content: flex-end; padding-bottom: clamp(3rem, 7vw, 6rem); color: rgba(255,250,240,.75); overflow-x: auto; }
         .tohi-nav a { color: inherit; text-decoration: none; white-space: nowrap; font-weight: 800; }
         .tohi-hero-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(300px, .9fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
-        .eyebrow { color: #d1a436; text-transform: uppercase; letter-spacing: .16em; font-weight: 900; font-size: .78rem; margin: 0 0 1rem; }
-        .tohi-page h1 { font-size: clamp(3.4rem, 9vw, 8.5rem); line-height: .86; letter-spacing: -.075em; margin: 0 0 1.5rem; }
-        .tohi-page h2 { font-size: clamp(2rem, 4vw, 4.3rem); line-height: .98; letter-spacing: -.05em; margin: 0 0 1rem; }
-        .tohi-page h3 { margin: 0 0 .5rem; font-size: 1.25rem; }
-        .tohi-page p { color: #58655d; line-height: 1.7; }
+        .eyebrow { color: #d1a436; text-transform: uppercase; letter-spacing: .16em; font-weight: 900; font-size: .78rem; margin: 0 0 1rem; overflow-wrap: normal; }
+        .tohi-page h1 { font-size: clamp(3.1rem, 8.4vw, 8.5rem); line-height: .9; letter-spacing: -.065em; margin: 0 0 1.5rem; text-wrap: balance; overflow-wrap: normal; hyphens: none; }
+        .tohi-page h2 { font-size: clamp(2rem, 4vw, 4.3rem); line-height: 1; letter-spacing: -.045em; margin: 0 0 1rem; text-wrap: balance; overflow-wrap: normal; hyphens: none; }
+        .tohi-page h3 { margin: 0 0 .5rem; font-size: 1.25rem; line-height: 1.15; text-wrap: balance; }
+        .tohi-page p { color: #58655d; line-height: 1.7; overflow-wrap: break-word; }
         .tohi-hero p { color: rgba(255,250,240,.76); }
         .hero-copy { font-size: clamp(1.08rem, 2vw, 1.38rem); max-width: 850px; }
         .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
-        .button { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; border-radius: 999px; padding: .9rem 1.15rem; text-decoration: none; font-weight: 900; }
+        .button { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; border-radius: 999px; padding: .9rem 1.15rem; text-decoration: none; font-weight: 900; text-align: center; white-space: normal; line-height: 1.15; }
         .primary { background: #d1a436; color: #102016; }
         .secondary { border: 1px solid rgba(255,250,240,.25); color: #fffaf0; }
         .hero-card, .principle-card, .slide-card, .callout { border: 1px solid rgba(23,35,29,.16); border-radius: 24px; box-shadow: 0 24px 80px rgba(16,32,22,.16); background: rgba(255,250,240,.82); }
@@ -62,9 +63,10 @@ export default function TohiPlanPage() {
         .callout { max-width: 1050px; margin: 0 auto; padding: clamp(1.25rem, 3vw, 2rem); background: rgba(240,217,130,.24); }
         .tohi-footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem clamp(1rem, 5vw, 6rem); background: #0b140f; color: #fffaf0; }
         .tohi-footer p, .tohi-footer a { color: rgba(255,250,240,.72); }
+        .tohi-footer p:last-child { display: flex; flex-wrap: wrap; gap: .35rem .65rem; }
         @media (max-width: 1100px) { .principles, .slide-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
         @media (max-width: 900px) { .tohi-hero-grid { grid-template-columns: 1fr; } .tohi-nav { justify-content: flex-start; } .tohi-footer { flex-direction: column; } }
-        @media (max-width: 620px) { .principles, .slide-grid { grid-template-columns: 1fr; } .tohi-page h1 { font-size: clamp(3rem, 18vw, 5rem); } }
+        @media (max-width: 620px) { .tohi-hero { padding-top: 3rem; } .principles, .slide-grid { grid-template-columns: 1fr; } .tohi-page h1 { font-size: clamp(2.75rem, 14vw, 4.5rem); letter-spacing: -.045em; line-height: .95; } .tohi-page h2 { font-size: clamp(1.85rem, 10vw, 3.2rem); letter-spacing: -.035em; line-height: 1.03; } .hero-actions { flex-direction: column; align-items: stretch; } .button { width: 100%; border-radius: 18px; } .slide-card div, .principle-card { padding: 1rem; } }
       `}</style>
 
       <section className="tohi-hero">
@@ -155,7 +157,7 @@ export default function TohiPlanPage() {
 
       <footer className="tohi-footer">
         <p>Ecusta Tohi Plan</p>
-        <p><a href="/">Home</a> - <a href="/research">Research</a> - <a href="/take-action">Take Action</a> - <a href="/contact">Contact Amy Turner</a></p>
+        <p><a href="/">Home</a> <span>-</span> <a href="/research">Research</a> <span>-</span> <a href="/take-action">Take Action</a> <span>-</span> <a href="/contact">Contact Amy Turner</a></p>
       </footer>
     </main>
   );

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./visuals.css";
 import "./seo.css";
+import "./audit-fixes.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ecustaland.org"),
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s | Ecusta Land",
   },
   description:
-    "Ecusta Land is a wellness, beautification, trails, sunflowers, and community revitalization vision for the former Ecusta mill site in Brevard / Pisgah Forest, North Carolina.",
+    "A sunflower, trails, wellness, and revitalization vision for the former Ecusta mill site in Brevard and Pisgah Forest, NC.",
   keywords: [
     "Ecusta Land",
     "Ecusta",
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ecusta Land | Sunflower Power for Brevard",
     description:
-      "A positive community vision for restoration, wellness, trails, native planting, education, sacred-geometry wellness design, and a better fit for the former Ecusta mill site.",
+      "A sunflower, trails, wellness, and revitalization vision for the former Ecusta mill site in Brevard and Pisgah Forest, NC.",
     url: "https://ecustaland.org",
     siteName: "Ecusta Land",
     locale: "en_US",
@@ -63,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ecusta Land | Sunflower Power for Brevard",
     description:
-      "A wellness and beautification vision for Ecusta rooted in sunflowers, trails, education, and community revitalization.",
+      "A sunflower, trails, wellness, and revitalization vision for the former Ecusta mill site in Brevard and Pisgah Forest, NC.",
     images: ["/images/ecusta-photo-hero-valley.png"],
   },
 };
@@ -99,11 +100,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <a className="skip-link" href="#main-content">Skip to content</a>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {children}
+        <div id="main-content" tabIndex={-1}>{children}</div>
       </body>
     </html>
   );

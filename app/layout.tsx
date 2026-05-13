@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import SiteNav from "./components/SiteNav";
 import "./globals.css";
 import "./visuals.css";
 import "./seo.css";
@@ -105,6 +106,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <SiteNav />
         <div id="main-content" tabIndex={-1}>{children}</div>
       </body>
     </html>

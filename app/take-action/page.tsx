@@ -1,11 +1,28 @@
 import type { Metadata } from "next";
 
+const pageTitle = "Take Action | Ecusta Land";
+const pageDescription =
+  "Sign the petition, ask for records, and support a community-centered future for the former Ecusta mill site.";
+const pageUrl = "https://ecustaland.org/take-action";
+const pageImage = "/images/ecusta-photo-trail-stream.png";
+
 export const metadata: Metadata = {
-  title: "Take Action | Ecusta Land",
-  description:
-    "Ways to support the Ecusta Land vision: sign the sunflower petition, ask for public records, compare the data-center path with wellness-centered revitalization, and explore sacred-geometry wellness design resources.",
-  alternates: {
-    canonical: "https://ecustaland.org/take-action",
+  title: pageTitle,
+  description: pageDescription,
+  alternates: { canonical: pageUrl },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    url: pageUrl,
+    siteName: "Ecusta Land",
+    type: "website",
+    images: [{ url: pageImage, width: 1672, height: 941, alt: "Ecusta Land trail and stream vision with sunflowers and mountain views." }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: [pageImage],
   },
 };
 
@@ -45,13 +62,6 @@ export default function TakeActionPage() {
       </a>
 
       <section className="section action-hero">
-        <nav className="nav page-nav" aria-label="Page navigation">
-          <a href="/">Home</a>
-          <a href="/vision-gallery">Gallery</a>
-          <a href="/research">Research</a>
-          <a href="/take-action">Take Action</a>
-          <a href="/contact">Contact</a>
-        </nav>
         <div className="section-heading">
           <p className="eyebrow">Take Action</p>
           <h1>Support the Sunflower Vision.</h1>

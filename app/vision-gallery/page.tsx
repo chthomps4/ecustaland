@@ -1,11 +1,28 @@
 import type { Metadata } from "next";
 
+const pageTitle = "Vision Gallery | Ecusta Land";
+const pageDescription =
+  "Concept images for the Ecusta Land sunflower, trails, wellness, harvest, and community revitalization vision.";
+const pageUrl = "https://ecustaland.org/vision-gallery";
+const pageImage = "/images/ecusta-photo-wellness-garden.png";
+
 export const metadata: Metadata = {
-  title: "Vision Gallery | Ecusta Land",
-  description:
-    "Concept gallery for the Ecusta Land sunflower, wellness, trails, sacred geometry, harvest, and community revitalization vision in Brevard / Pisgah Forest, North Carolina.",
-  alternates: {
-    canonical: "https://ecustaland.org/vision-gallery",
+  title: pageTitle,
+  description: pageDescription,
+  alternates: { canonical: pageUrl },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    url: pageUrl,
+    siteName: "Ecusta Land",
+    type: "website",
+    images: [{ url: pageImage, width: 1672, height: 941, alt: "Ecusta Land wellness garden concept with sunflower plantings and mountain views." }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: [pageImage],
   },
 };
 
@@ -69,13 +86,6 @@ export default function VisionGalleryPage() {
       </a>
 
       <section className="section action-hero">
-        <nav className="nav page-nav" aria-label="Page navigation">
-          <a href="/">Home</a>
-          <a href="/vision-gallery">Gallery</a>
-          <a href="/research">Research</a>
-          <a href="/take-action">Take Action</a>
-          <a href="/contact">Contact</a>
-        </nav>
         <div className="section-heading">
           <p className="eyebrow">Vision Gallery</p>
           <h1>See the future before it is decided.</h1>

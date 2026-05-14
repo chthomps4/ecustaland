@@ -1,11 +1,37 @@
 import type { Metadata } from "next";
 
+const pageTitle = "Research & Documents | Ecusta Land";
+const pageDescription =
+  "Evidence labels, public records, and careful claim language for the Ecusta Land sunflower and revitalization vision.";
+const pageUrl = "https://ecustaland.org/research";
+const pageImage = "/images/ecusta-photo-hero-valley.png";
+
 export const metadata: Metadata = {
-  title: "Research & Documents | Ecusta Land",
-  description:
-    "Research posture, public-record priorities, evidence labels, and careful claim language for the Ecusta Land sunflower, wellness, and community revitalization vision.",
+  title: pageTitle,
+  description: pageDescription,
   alternates: {
-    canonical: "https://ecustaland.org/research",
+    canonical: pageUrl,
+  },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    url: pageUrl,
+    siteName: "Ecusta Land",
+    type: "website",
+    images: [
+      {
+        url: pageImage,
+        width: 1672,
+        height: 941,
+        alt: "Ecusta Land sunflower fields, trails, stream, restored mill buildings, and mountain vision.",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: [pageImage],
   },
 };
 
@@ -56,13 +82,6 @@ export default function ResearchPage() {
       </a>
 
       <section className="section action-hero">
-        <nav className="nav page-nav" aria-label="Page navigation">
-          <a href="/">Home</a>
-          <a href="/vision-gallery">Gallery</a>
-          <a href="/research">Research</a>
-          <a href="/take-action">Take Action</a>
-          <a href="/contact">Contact</a>
-        </nav>
         <div className="section-heading">
           <p className="eyebrow">Research & Documents</p>
           <h1>Hopeful vision. Careful claims. Public records.</h1>

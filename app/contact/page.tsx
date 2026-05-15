@@ -1,11 +1,28 @@
 import type { Metadata } from "next";
 
+const pageTitle = "Contact | Ecusta Land";
+const pageDescription =
+  "Contact Amy Turner about the Ecusta Land sunflower, wellness, trails, and community revitalization vision.";
+const pageUrl = "https://ecustaland.org/contact";
+const pageImage = "/images/ecusta-photo-harvest-community.png";
+
 export const metadata: Metadata = {
-  title: "Contact | Ecusta Land",
-  description:
-    "Contact Amy Turner about the Ecusta Land vision for wellness, beautification, sunflowers, trails, education, and community revitalization in Brevard / Pisgah Forest, North Carolina.",
-  alternates: {
-    canonical: "https://ecustaland.org/contact",
+  title: pageTitle,
+  description: pageDescription,
+  alternates: { canonical: pageUrl },
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    url: pageUrl,
+    siteName: "Ecusta Land",
+    type: "website",
+    images: [{ url: pageImage, width: 1672, height: 941, alt: "Ecusta Land sunflower harvest and community gathering concept." }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: [pageImage],
   },
 };
 
@@ -42,13 +59,6 @@ export default function ContactPage() {
       </a>
 
       <section className="section action-hero">
-        <nav className="nav page-nav" aria-label="Page navigation">
-          <a href="/">Home</a>
-          <a href="/vision-gallery">Gallery</a>
-          <a href="/research">Research</a>
-          <a href="/take-action">Take Action</a>
-          <a href="/contact">Contact</a>
-        </nav>
         <div className="section-heading">
           <p className="eyebrow">Contact</p>
           <h1>Connect about the Ecusta Land vision.</h1>

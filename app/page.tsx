@@ -141,6 +141,7 @@ export default function Home() {
         <nav className="nav" aria-label="Main navigation">
           <a href="#vision">Vision</a>
           <a href="#gallery">Gallery</a>
+          <a href="#data-center">Data Center</a>
           <a href="#moratorium">Moratorium</a>
           <a href="/research">Research</a>
           <a href="/take-action">Take Action</a>
@@ -192,6 +193,26 @@ export default function Home() {
             <span>{text}</span>
           </article>
         ))}
+      </section>
+
+      <section className="section data-center-alert" id="data-center">
+        <div className="alert-inner">
+          <div className="alert-icon">⚠️</div>
+          <div className="alert-content">
+            <p className="alert-kicker">Data Center Threat</p>
+            <h2>This land could become a closed data center instead of a public space.</h2>
+            <p>
+              Brevard adopted <strong>Ordinance No. 2026-11</strong> — a temporary moratorium on data centers,
+              cryptomining facilities, and server farms — because these high-impact uses raised serious questions
+              about power, water, noise, heat, and community fit. The moratorium expires <strong>July 2, 2026</strong>.
+              The community deserves to see and compare both futures before anything is approved.
+            </p>
+            <div className="alert-actions">
+              <a className="button primary" href="#two-futures">Compare the two futures</a>
+              <a className="button secondary" href="/research">See the research</a>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="vision" className="section intro-section">

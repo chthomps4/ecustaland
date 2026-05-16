@@ -80,18 +80,19 @@
   position: relative;
 }
 
-.mobile-menu summary {
+.mobile-menu-toggle {
   cursor: pointer;
-  list-style: none;
   border-radius: 999px;
   padding: 0.6rem 1rem;
   border: 1px solid rgba(255, 250, 240, 0.28);
   color: var(--paper);
   background: rgba(255, 250, 240, 0.08);
-}
-
-.mobile-menu summary::-webkit-details-marker {
-  display: none;
+  font-weight: 850;
+  font-size: inherit;
+  font-family: inherit;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .mobile-menu-panel {

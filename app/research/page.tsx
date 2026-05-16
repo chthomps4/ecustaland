@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 const pageTitle = "Research & Documents | Ecusta Land";
 const pageDescription =
   "Evidence labels, public records, and careful claim language for the Ecusta Land sunflower and revitalization vision.";
-const pageUrl = "https://ecustaland.org/research";
+const pageUrl = "https://www.ecustaland.org/research";
 const pageImage = "/images/ecusta-photo-hero-valley.png";
 
 export const metadata: Metadata = {

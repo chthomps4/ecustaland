@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 const pageTitle = "Contact | Ecusta Land";
 const pageDescription =
   "Contact Amy Turner about the Ecusta Land sunflower, wellness, trails, and community revitalization vision.";
-const pageUrl = "https://ecustaland.org/contact";
+const pageUrl = "https://www.ecustaland.org/contact";
 const pageImage = "/images/ecusta-photo-harvest-community.png";
 
 export const metadata: Metadata = {

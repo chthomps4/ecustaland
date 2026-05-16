@@ -3,6 +3,7 @@ const navLinks = [
   ["Vision", "/#vision"],
   ["Gallery", "/vision-gallery"],
   ["Moratorium", "/#moratorium"],
+  ["History", "/history"],
   ["Tohi Plan", "/tohi-plan"],
   ["Research", "/research"],
   ["Take Action", "/take-action"],

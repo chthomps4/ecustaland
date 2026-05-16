@@ -117,6 +117,47 @@ const transitVision = [
   ["Brewery & Wellness Loop", "A transit circuit connecting the new Ecusta wellness campus to local breweries, restaurants, and downtown Brevard. Community-wide vitality."],
 ];
 
+const boutiqueVision = [
+  ["Boutique Hotel & Wellness Resort", "A place where we can discover our strengths, enlighten our mind, explore our bodies, and celebrate our emotions. Not a chain hotel — a sanctuary."],
+  ["Blue Zone Wellness Retreat", "Inspired by the world's Blue Zones — communities where people live the longest, healthiest lives. The Ecusta campus becomes a Blue Zone retreat center, where longevity principles are woven into every experience."],
+  ["Holding Space for Healing", "A space for people to heal themselves. We don't heal them — the land does. The water does. The forest does. We hold space."],
+  ["Parents & Families", "Parents of camp kids come to the wellness retreat center and play too. The whole family heals — not just the individual. A good energy career for the community."],
+];
+
+const observationDeck = [
+  ["Bird Tower", "A painting and bird-watching tower rising above the sunflower fields — sit, paint, read, watch the clouds."],
+  ["Sunlight Level", "Bask in sunlight at the base level. Watch sunflowers grow. The wisdom of a sunflower: always face the light."],
+  ["Art & Pottery", "Art classes, pottery studios, painting workshops — all with views of the mountains and sunflower fields."],
+  ["Amphitheatre", "Live music, drum circles, theatre, storytelling — a performance space integrated with the natural landscape."],
+  ["Swings", "Simple joy. Swings overlooking the sunflower fields and mountains. Because healing includes play."],
+];
+
+const medicineTeam = [
+  ["Information & Education", "About Appalachian plant medicine, Cherokee healing traditions, and the medicine market. Sit in a hidden opening and learn."],
+  ["Acupuncture & Art + Aromatherapy", "Integrated healing arts — acupuncture combined with creative expression and scent therapy."],
+  ["Massage + Sunflower Bathing + Forest Grounding", "Full-body healing: massage therapy, sunflower petal baths, and barefoot forest grounding on the Ecusta Trail."],
+  ["Sound Bath + Sauna", "Sound bath ceremonies paired with the sky sauna experience. Frequency healing meets thermal wellness."],
+  ["Healing the Land = Healing Ourselves", "What a peaceful path — in harmony with our environment. Ask an elder or family member about your choices."],
+];
+
+const sevenPillars = [
+  ["Industry", "Responsible development that creates real economic value while honoring the land."],
+  ["Restore", "Phytoremediation, native plantings, and ecological rehabilitation of the mill site."],
+  ["Funding & Business", "Public-private partnerships, grants, tourism revenue, and a self-sustaining wellness economy."],
+  ["Recreation", "Trails, biking, swimming, kayaking, the Ecusta Trail, sunflower fields, and outdoor adventure."],
+  ["Arts", "Painting, pottery, live music, theatre, drum circles, and creative workshops."],
+  ["Education", "Cherokee history, plant medicine, environmental science, and community learning."],
+  ["Wellness", "Sauna, aromatherapy, massage, sound bath, acupuncture, and holistic health."],
+];
+
+const communityVision = [
+  ["Workforce Housing", "Affordable housing for the people who work at and around the wellness campus — teachers, healers, artists, guides."],
+  ["Senior Housing", "A place for elders to live in community, close to the healing landscape, respected for their wisdom."],
+  ["Create New Jobs in TC", "Utilize our existing partners in wellness and arts. Tea Board, Gold Leaf Foundation, and local organizations as anchor partners."],
+  ["Grants & Funding", "Blue Zone wellness retreat grants, environmental remediation funding, tourism development, arts grants, and private investment."],
+  ["Host Your Own Events", "People could host their own events at the resort — retreats, weddings, reunions, workshops. Live large in Ecusta."],
+];
+
 const sacredPrinciples = [
   ["Energy Flow", "Design every space so energy moves freely — no stagnation, no blockages. Round forms, open sight lines, natural light, and flowing water guide the life force through the building."],
   ["Grounding", "Connect people to the Earth. Bare feet on stone. Water touching skin. Forest air in lungs. Every experience should bring visitors closer to the ground beneath them."],
@@ -239,6 +280,45 @@ export default function TohiPlanPage() {
         .partner-card { border: 1px solid rgba(23,35,29,.16); border-radius: 24px; box-shadow: 0 24px 80px rgba(16,32,22,.16); background: rgba(255,250,240,.82); padding: 1.5rem; }
         .partner-card h3 { color: #496b43; }
 
+        /* boutique vision */
+        .boutique-section { background: radial-gradient(circle at 80% 20%,rgba(209,164,54,.12),transparent 22%), linear-gradient(180deg,#fffaf0,#f6f2e7); }
+        .boutique-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
+        .boutique-card { border: 1px solid rgba(23,35,29,.16); border-radius: 24px; background: rgba(255,250,240,.82); padding: 1.5rem; }
+        .boutique-card h3 { color: #496b43; }
+
+        /* observation deck */
+        .obs-section { background: linear-gradient(135deg,#1a3322,#102016); color: #fffaf0; }
+        .obs-section p { color: rgba(255,250,240,.72); }
+        .obs-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; }
+        .obs-card { border: 1px solid rgba(255,250,240,.14); border-radius: 24px; background: rgba(255,250,240,.06); padding: 1.35rem; }
+        .obs-card h3 { color: #f0d982; }
+
+        /* medicine team */
+        .med-section { background: radial-gradient(circle at 20% 30%,rgba(73,107,67,.15),transparent 25%), linear-gradient(180deg,#f6f2e7,#fffaf0); }
+        .med-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
+        .med-card { border: 1px solid rgba(23,35,29,.16); border-radius: 24px; background: rgba(255,250,240,.82); padding: 1.5rem; }
+        .med-card h3 { color: #496b43; }
+
+        /* seven pillars */
+        .pillars-section { background: linear-gradient(180deg,#102016,#183022); color: #fffaf0; }
+        .pillars-section p { color: rgba(255,250,240,.72); }
+        .pillars-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 1rem; }
+        .pillar-card { border: 1px solid rgba(255,250,240,.14); border-radius: 24px; background: rgba(255,250,240,.06); padding: 1.35rem; }
+        .pillar-card h3 { color: #f0d982; }
+        .pillar-num { display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: #d1a436; color: #102016; font-weight: 900; font-size: .82rem; margin-bottom: .6rem; }
+
+        /* community */
+        .community-section { background: radial-gradient(circle at 50% 10%,rgba(209,164,54,.12),transparent 20%), linear-gradient(180deg,#fffaf0,#f6f2e7); }
+        .community-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; }
+        .community-card { border: 1px solid rgba(23,35,29,.16); border-radius: 24px; background: rgba(255,250,240,.82); padding: 1.35rem; }
+        .community-card h3 { color: #496b43; }
+
+        /* featured image */
+        .feat-img-section { position: relative; min-height: 50vh; overflow: hidden; }
+        .feat-img-section img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; }
+        .feat-img-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(16,32,22,.7) 0%, transparent 50%); display: flex; align-items: flex-end; padding: clamp(2rem,5vw,4rem); }
+        .feat-img-overlay p { color: rgba(255,250,240,.9); font-size: 1.3rem; font-weight: 700; max-width: 700px; }
+
         /* footer */
         .tohi-footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem clamp(1rem,5vw,6rem); background: #0b140f; color: #fffaf0; }
         .tohi-footer p, .tohi-footer a { color: rgba(255,250,240,.72); }
@@ -246,21 +326,21 @@ export default function TohiPlanPage() {
 
         /* responsive */
         @media (max-width: 1100px) {
-          .principles, .wellness-grid, .sacred-grid, .retail-grid, .freq-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
-          .slide-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+          .principles, .wellness-grid, .sacred-grid, .retail-grid, .freq-grid, .pillars-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+          .slide-grid, .obs-grid, .community-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
         }
         @media (max-width: 900px) {
-          .tohi-hero-grid, .wisdom-grid, .earth-grid, .arch-grid, .transit-grid, .partner-grid { grid-template-columns: 1fr; }
+          .tohi-hero-grid, .wisdom-grid, .earth-grid, .arch-grid, .transit-grid, .partner-grid, .boutique-grid, .med-grid { grid-template-columns: 1fr; }
           .tohi-footer { flex-direction: column; }
         }
         @media (max-width: 620px) {
           .tohi-hero { padding-top: 3rem; }
-          .principles, .wellness-grid, .sacred-grid, .retail-grid, .freq-grid, .slide-grid { grid-template-columns: 1fr; }
+          .principles, .wellness-grid, .sacred-grid, .retail-grid, .freq-grid, .slide-grid, .pillars-grid, .obs-grid, .community-grid { grid-template-columns: 1fr; }
           .tohi-page h1 { font-size: clamp(2.75rem,14vw,4.5rem); letter-spacing: -.045em; line-height: .95; }
           .tohi-page h2 { font-size: clamp(1.85rem,10vw,3.2rem); letter-spacing: -.035em; line-height: 1.03; }
           .hero-actions { flex-direction: column; align-items: stretch; }
           .button { width: 100%; border-radius: 18px; }
-          .slide-card div, .principle-card, .wisdom-card, .freq-card, .wellness-card, .arch-card, .sacred-card, .retail-card, .transit-card { padding: 1rem; }
+          .slide-card div, .principle-card, .wisdom-card, .freq-card, .wellness-card, .arch-card, .sacred-card, .retail-card, .transit-card, .obs-card, .pillar-card, .med-card, .boutique-card, .community-card { padding: 1rem; }
         }
       `}</style>
 
@@ -280,6 +360,7 @@ export default function TohiPlanPage() {
               <a className="button secondary" href="#cherokee">Cherokee Medicine</a>
               <a className="button secondary" href="#wellness">Wellness Vision</a>
               <a className="button secondary" href="#architecture">Sacred Architecture</a>
+              <a className="button secondary" href="/history">History of the Land</a>
             </div>
           </div>
           <aside className="hero-card">
@@ -389,6 +470,31 @@ export default function TohiPlanPage() {
         </div>
       </section>
 
+      {/* ═══ BOUTIQUE HOTEL & WELLNESS RESORT ═══ */}
+      <section className="section boutique-section">
+        <div className="section-heading">
+          <p className="eyebrow">Boutique Hotel & Wellness Resort</p>
+          <h2>A place to discover our strengths, enlighten our minds, and celebrate our emotions.</h2>
+          <p>Not a chain hotel. Not a commercial spa. A wellness resort rooted in the land — where happiness comes from within, where spiritual healing meets the oldest mountains in the world. Ancient healing wisdom of the Blue Ridge, since 3000 BC.</p>
+        </div>
+        <div className="boutique-grid">
+          {boutiqueVision.map(([title, text]) => (
+            <article className="boutique-card" key={title}>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* ═══ SUNFLOWER FEATURED IMAGE ═══ */}
+      <section className="feat-img-section" style={{ minHeight: "45vh" }}>
+        <img src="/images/tohi/sunflower-field-mountains.webp" alt="Sunflower fields stretching toward the Blue Ridge Mountains — sunflowers make people happy, good medicine" loading="lazy" />
+        <div className="feat-img-overlay">
+          <p>🌻 Sunflower wisdom, since 3000 BC. The happiness of sunflowers. Good medicine. Symbolic value.</p>
+        </div>
+      </section>
+
       {/* ═══ SACRED DESIGN PRINCIPLES ═══ */}
       <section className="section sacred-section">
         <div className="section-heading">
@@ -423,6 +529,40 @@ export default function TohiPlanPage() {
         </div>
       </section>
 
+      {/* ═══ OBSERVATION DECK & EXPERIENCES ═══ */}
+      <section className="section obs-section">
+        <div className="section-heading">
+          <p className="eyebrow">The Observation Deck — Painting, Bikes, Hiking</p>
+          <h2>Watch sunflowers grow. Paint the mountains. Swing over the valley.</h2>
+          <p>A multi-level observation and activity tower at the heart of the campus — bird watching, painting, reading, cloud-level views, and the simple joy of swings overlooking the sunflower fields.</p>
+        </div>
+        <div className="obs-grid">
+          {observationDeck.map(([title, text]) => (
+            <article className="obs-card" key={title}>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* ═══ MEDICINE TEAM ═══ */}
+      <section className="section med-section">
+        <div className="section-heading">
+          <p className="eyebrow">The Medicine Team</p>
+          <h2>Healing the land is healing ourselves. What a peaceful path.</h2>
+          <p>A dedicated medicine team offering integrated wellness experiences — from Appalachian plant education to acupuncture, forest grounding, sunflower bathing, and sound ceremony. In harmony with our environment.</p>
+        </div>
+        <div className="med-grid">
+          {medicineTeam.map(([title, text]) => (
+            <article className="med-card" key={title}>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
       {/* ═══ RETAIL VISION ═══ */}
       <section className="section retail-section">
         <div className="section-heading">
@@ -450,6 +590,49 @@ export default function TohiPlanPage() {
         <div className="transit-grid">
           {transitVision.map(([title, text]) => (
             <article className="transit-card" key={title}>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* ═══ SEVEN PILLARS ═══ */}
+      <section className="section pillars-section">
+        <div className="section-heading">
+          <p className="eyebrow">The Seven Pillars of Ecusta Tohi</p>
+          <h2>Seven pillars. One vision. Everything the land needs to thrive.</h2>
+          <p>This plan encompasses every dimension of community vitality — from industry and funding to art, education, recreation, and wellness. Each pillar reinforces the others.</p>
+        </div>
+        <div className="pillars-grid">
+          {sevenPillars.map(([title, text], i) => (
+            <article className="pillar-card" key={title}>
+              <span className="pillar-num">{i + 1}</span>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* ═══ SACRED GEOMETRY CONCEPT IMAGE ═══ */}
+      <section className="feat-img-section" style={{ minHeight: "50vh" }}>
+        <img src="/images/tohi/sacred-geometry-building.webp" alt="Sacred geometry wellness center concept — circular architecture inspired by the Cherokee medicine wheel, rooftop observation deck, Blue Ridge Mountain views" loading="lazy" />
+        <div className="feat-img-overlay">
+          <p>Sacred geometry. Round design. Energy flows in curves. The medicine wheel made architecture.</p>
+        </div>
+      </section>
+
+      {/* ═══ COMMUNITY & ECONOMIC VISION ═══ */}
+      <section className="section community-section">
+        <div className="section-heading">
+          <p className="eyebrow">Community & Economic Vision</p>
+          <h2>Create new jobs. Build workforce housing. Attract investment to our community.</h2>
+          <p>This is not just a wellness campus — it is an economic engine for Transylvania County. New jobs, new housing, new revenue, new purpose. Let's put our hearts and minds together.</p>
+        </div>
+        <div className="community-grid">
+          {communityVision.map(([title, text]) => (
+            <article className="community-card" key={title}>
               <h3>{title}</h3>
               <p>{text}</p>
             </article>
@@ -526,6 +709,7 @@ export default function TohiPlanPage() {
         <p>Ecusta Tohi — Cherokee Healing Wisdom</p>
         <p>
           <a href="/">Home</a> <span>·</span>{" "}
+          <a href="/history">History</a> <span>·</span>{" "}
           <a href="/research">Research</a> <span>·</span>{" "}
           <a href="/take-action">Take Action</a> <span>·</span>{" "}
           <a href="/contact">Contact</a>

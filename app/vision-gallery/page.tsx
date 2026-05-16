@@ -4,7 +4,7 @@ const pageTitle = "Vision Gallery | Ecusta Land";
 const pageDescription =
   "Concept images for the Ecusta Land sunflower, trails, wellness, harvest, and community revitalization vision.";
 const pageUrl = "https://www.ecustaland.org/vision-gallery";
-const pageImage = "/images/ecusta-photo-wellness-garden.png";
+const pageImage = "/images/ecusta-photo-wellness-garden.webp";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -31,25 +31,25 @@ const petitionUrl = "https://www.change.org/p/beautifying-ecusta-paper-mill-fiel
 const galleryItems = [
   {
     title: "Sunflower Power Hero",
-    image: "/images/ecusta-photo-hero-valley.png",
+    image: "/images/ecusta-photo-hero-valley.webp",
     alt: "Sunflower fields, walking paths, a stream, restored mill buildings, mountains, and sacred geometry at golden hour in the Ecusta vision.",
     text: "The central public image: a restored landscape where the former mill identity becomes beauty, access, water, mountain light, and community pride.",
   },
   {
     title: "Wellness Garden",
-    image: "/images/ecusta-photo-wellness-garden.png",
+    image: "/images/ecusta-photo-wellness-garden.webp",
     alt: "Sacred-geometry wellness garden with meditation circle, sunflower plantings, stream, pavilion, and Blue Ridge mountain views.",
     text: "A wellness-centered garden with circular paths, sunflower beds, sacred-geometry design, calm gathering space, and a retreat-like pavilion.",
   },
   {
     title: "Trail + Stream",
-    image: "/images/ecusta-photo-trail-stream.png",
+    image: "/images/ecusta-photo-trail-stream.webp",
     alt: "Walking and biking trail beside a clear stream with sunflowers, native grasses, wildflowers, and mountain views.",
     text: "A recreation-forward future connected to the Ecusta Trail, Pisgah Forest, cycling, walking, water, native planting, and everyday public use.",
   },
   {
     title: "Harvest Community Center",
-    image: "/images/ecusta-photo-harvest-community.png",
+    image: "/images/ecusta-photo-harvest-community.webp",
     alt: "Community sunflower harvest and gathering space with baskets, pavilion, sacred geometry plaza, and mountain sunset.",
     text: "A seasonal public gathering place where bloom leads to learning, seed saving, events, stewardship, and careful reuse exploration.",
   },

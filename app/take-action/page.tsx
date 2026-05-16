@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 const pageTitle = "Take Action | Ecusta Land";
 const pageDescription =
   "Sign the petition, ask for records, and support a community-centered future for the former Ecusta mill site.";
-const pageUrl = "https://ecustaland.org/take-action";
+const pageUrl = "https://www.ecustaland.org/take-action";
 const pageImage = "/images/ecusta-photo-trail-stream.png";
 
 export const metadata: Metadata = {

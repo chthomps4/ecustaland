@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 const pageTitle = "Vision Gallery | Ecusta Land";
 const pageDescription =
   "Concept images for the Ecusta Land sunflower, trails, wellness, harvest, and community revitalization vision.";
-const pageUrl = "https://ecustaland.org/vision-gallery";
+const pageUrl = "https://www.ecustaland.org/vision-gallery";
 const pageImage = "/images/ecusta-photo-wellness-garden.png";
 
 export const metadata: Metadata = {

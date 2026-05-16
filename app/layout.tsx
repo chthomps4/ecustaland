@@ -6,7 +6,7 @@ import "./seo.css";
 import "./audit-fixes.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ecustaland.org"),
+  metadataBase: new URL("https://www.ecustaland.org"),
   title: {
     default: "Ecusta Land | Sunflower Power for Brevard",
     template: "%s",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "Blue Ridge Mountains",
   ],
   alternates: {
-    canonical: "https://ecustaland.org",
+    canonical: "https://www.ecustaland.org",
   },
   robots: {
     index: true,
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Ecusta Land | Sunflower Power for Brevard",
     description:
       "A sunflower, trails, wellness, and revitalization vision for the former Ecusta mill site in Brevard and Pisgah Forest, NC.",
-    url: "https://ecustaland.org",
+    url: "https://www.ecustaland.org",
     siteName: "Ecusta Land",
     locale: "en_US",
     type: "website",
@@ -74,7 +74,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Ecusta Land",
-  url: "https://ecustaland.org",
+  url: "https://www.ecustaland.org",
   description:
     "A wellness, beautification, trails, sunflowers, and community revitalization vision for the former Ecusta mill site in Brevard / Pisgah Forest, North Carolina.",
   inLanguage: "en-US",
@@ -88,7 +88,7 @@ const jsonLd = {
   ],
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://ecustaland.org/?q={search_term_string}",
+    target: "https://www.ecustaland.org/?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 };

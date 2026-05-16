@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://ecustaland.org";
+  const baseUrl = "https://www.ecustaland.org";
 
   return [
     {
@@ -24,6 +24,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/take-action`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/tohi-plan`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,

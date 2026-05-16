@@ -4,7 +4,7 @@ const pageTitle = "Ecusta Tohi | Cherokee Medicine & Healing Wisdom | Ecusta Lan
 const pageDescription =
   "Ecusta Tohi — a vision rooted in Cherokee medicine, Appalachian plant wisdom, sacred geometry, frequency healing, and the ancient life force of the Blue Ridge Mountains.";
 const pageUrl = "https://www.ecustaland.org/tohi-plan";
-const pageImage = "/images/tohi-plan/page-01.svg";
+const pageImage = "/images/tohi/tohi-hero-thumbnail.webp";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -364,7 +364,7 @@ export default function TohiPlanPage() {
             </div>
           </div>
           <aside className="hero-card">
-            <img src="/images/tohi-plan/page-01.svg" alt="Ecusta Tohi revitalization plan cover — Cherokee medicine, sunflower remediation, and sacred healing" />
+            <img src="/images/tohi/tohi-hero-thumbnail.webp" alt="Ecusta Tohi revitalization plan cover — Cherokee medicine, sunflower remediation, and sacred healing" />
             <div>
               <p className="eyebrow">The Sunflower Surprise</p>
               <h2>Sunflowers start at the Transylvania County line.</h2>
@@ -391,6 +391,14 @@ export default function TohiPlanPage() {
         </div>
       </section>
 
+      {/* ═══ CHEROKEE MEDICINE WALK IMAGE ═══ */}
+      <section className="feat-img-section" style={{ minHeight: "45vh" }}>
+        <img src="/images/tohi/cherokee-medicine-walk.webp" alt="Misty Appalachian forest trail at dawn — wild ginseng and ferns along a mountain creek, Blue Ridge Mountains in the distance" loading="lazy" />
+        <div className="feat-img-overlay">
+          <p>Every plant, every root, every mushroom holds knowledge. The forest is the oldest pharmacy on Earth.</p>
+        </div>
+      </section>
+
       {/* ═══ CHEROKEE MEDICINE ═══ */}
       <section id="cherokee" className="section cherokee-section">
         <div className="section-heading">
@@ -405,6 +413,14 @@ export default function TohiPlanPage() {
               <p>{text}</p>
             </article>
           ))}
+        </div>
+      </section>
+
+      {/* ═══ MOTHER EARTH IMAGE ═══ */}
+      <section className="feat-img-section" style={{ minHeight: "45vh" }}>
+        <img src="/images/tohi/mother-earth-elements.webp" alt="Aerial view of Blue Ridge Mountains at golden hour — lush green forest, winding silver river, dramatic clouds" loading="lazy" />
+        <div className="feat-img-overlay">
+          <p>She is the source of life. Not the resource. We all share the same mother.</p>
         </div>
       </section>
 
@@ -453,6 +469,14 @@ export default function TohiPlanPage() {
         </div>
       </section>
 
+      {/* ═══ SKY SAUNA IMAGE ═══ */}
+      <section className="feat-img-section" style={{ minHeight: "45vh" }}>
+        <img src="/images/tohi/sky-sauna-vista.webp" alt="Open-air wooden sauna pavilion overlooking Blue Ridge mountain ridges at sunset — infinity cold plunge pool, steam rising, luxury wellness retreat" loading="lazy" />
+        <div className="feat-img-overlay">
+          <p>Open like Iceland. Rooted in Appalachia. A sky sauna with a view of the oldest mountains on Earth.</p>
+        </div>
+      </section>
+
       {/* ═══ WELLNESS EXPERIENCES ═══ */}
       <section id="wellness" className="section wellness-section">
         <div className="section-heading">
@@ -492,6 +516,14 @@ export default function TohiPlanPage() {
         <img src="/images/tohi/sunflower-field-mountains.webp" alt="Sunflower fields stretching toward the Blue Ridge Mountains — sunflowers make people happy, good medicine" loading="lazy" />
         <div className="feat-img-overlay">
           <p>🌻 Sunflower wisdom, since 3000 BC. The happiness of sunflowers. Good medicine. Symbolic value.</p>
+        </div>
+      </section>
+
+      {/* ═══ MEDICINE WHEEL IMAGE ═══ */}
+      <section className="feat-img-section" style={{ minHeight: "45vh" }}>
+        <img src="/images/tohi/cherokee-medicine-wheel-tohi.webp" alt="Cherokee medicine wheel on earth ground — four sacred cardinal directions with red, blue, black, and white, surrounded by native wildflowers and sunflowers" loading="lazy" />
+        <div className="feat-img-overlay">
+          <p>The sacred hoop of life. All things are connected in a circle. Health, community, spirit, and nature are one.</p>
         </div>
       </section>
 
@@ -713,6 +745,12 @@ export default function TohiPlanPage() {
           <a href="/research">Research</a> <span>·</span>{" "}
           <a href="/take-action">Take Action</a> <span>·</span>{" "}
           <a href="/contact">Contact</a>
+        </p>
+        <p style={{ fontSize: "0.72rem", opacity: 0.45 }}>
+          Site by{" "}
+          <a href="https://localsignalwebsites.studio" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>
+            Local Signal Websites
+          </a>
         </p>
       </footer>
     </main>

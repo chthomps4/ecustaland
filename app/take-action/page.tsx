@@ -200,6 +200,7 @@ export default function TakeActionPage() {
       <footer className="footer">
         <p>Ecusta Land</p>
         <p><a href={petitionUrl} target="_blank" rel="noopener noreferrer">Petition</a> · <a href="/vision-gallery">Gallery</a> · <a href="/research">Research</a> · <a href="/take-action">Take Action</a> · <a href="/contact">Contact Amy Turner</a></p>
+              <p style={{ fontSize: "0.72rem", opacity: 0.45 }}>Site by <a href="https://localsignalwebsites.studio" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>Local Signal Websites</a></p>
       </footer>
     </main>
   );

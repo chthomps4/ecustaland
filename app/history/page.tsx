@@ -523,6 +523,7 @@ export default function HistoryPage() {
           <a href="/take-action">Take Action</a> <span style={{ color: "rgba(255,250,240,.4)" }}>·</span>{" "}
           <a href="/contact">Contact</a>
         </p>
+              <p style={{ fontSize: "0.72rem", opacity: 0.45 }}>Site by <a href="https://localsignalwebsites.studio" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>Local Signal Websites</a></p>
       </footer>
     </main>
   );

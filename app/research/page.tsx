@@ -4,7 +4,7 @@ const pageTitle = "Research & Documents | Ecusta Land";
 const pageDescription =
   "Evidence labels, public records, and careful claim language for the Ecusta Land sunflower and revitalization vision.";
 const pageUrl = "https://www.ecustaland.org/research";
-const pageImage = "/images/ecusta-photo-hero-valley.png";
+const pageImage = "/images/ecusta-photo-hero-valley.webp";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -100,7 +100,7 @@ export default function ResearchPage() {
         <div className="photo-feature-grid">
           <img
             className="feature-photo"
-            src="/images/ecusta-photo-hero-valley.png"
+            src="/images/ecusta-photo-hero-valley.webp"
             alt="Sunflower fields, walking paths, stream, restored mill buildings, mountains, and sacred geometry at golden hour in the Ecusta vision."
           />
           <div>

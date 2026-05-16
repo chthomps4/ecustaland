@@ -17,25 +17,25 @@ const visionPillars = [
 const visionGallery = [
   {
     title: "The Sunflower Field",
-    image: "/images/ecusta-photo-hero-valley.png",
+    image: "/images/ecusta-photo-hero-valley.webp",
     alt: "Sunflower fields, walking paths, a stream, restored mill buildings, mountains, and sacred geometry at golden hour in the Ecusta vision.",
     text: "A bright public symbol of renewal: sunflowers, native planting, pollinator habitat, mountain light, and beauty people can recognize immediately.",
   },
   {
     title: "Wellness by Design",
-    image: "/images/ecusta-photo-wellness-garden.png",
+    image: "/images/ecusta-photo-wellness-garden.webp",
     alt: "Sacred-geometry wellness garden with meditation circle, sunflower plantings, stream, pavilion, and Blue Ridge mountain views.",
     text: "A wellness-centered garden shaped by circles, sacred geometry, walking paths, gathering spaces, sunflower beds, and mountain calm.",
   },
   {
     title: "Trails Through Bloom",
-    image: "/images/ecusta-photo-trail-stream.png",
+    image: "/images/ecusta-photo-trail-stream.webp",
     alt: "Walking and biking trail beside a clear stream with sunflowers, native grasses, wildflowers, and mountain views.",
     text: "A public recreation future tied to the Ecusta Trail, Pisgah Forest, waterways, biking, walking, family use, and outdoor access.",
   },
   {
     title: "Bloom to Benefit",
-    image: "/images/ecusta-photo-harvest-community.png",
+    image: "/images/ecusta-photo-harvest-community.webp",
     alt: "Community sunflower harvest and gathering space with baskets, pavilion, sacred geometry plaza, and mountain sunset.",
     text: "A seasonal cycle where planting and bloom lead to learning, stewardship, seed saving, events, and carefully explored reuse opportunities.",
   },
@@ -166,7 +166,7 @@ export default function Home() {
           <aside className="hero-card photo-hero-card elevated-photo-card">
             <img
               className="hero-photo"
-              src="/images/ecusta-photo-hero-valley.png"
+              src="/images/ecusta-photo-hero-valley.webp"
               alt="Sunflower fields, walking paths, stream, restored mill buildings, mountains, and sacred geometry at golden hour in the Ecusta vision."
             />
             <p className="card-label">The focal point</p>
@@ -180,7 +180,7 @@ export default function Home() {
 
       <section className="visual-band" aria-label="Ecusta Land visual preview">
         <img
-          src="/images/ecusta-photo-hero-valley.png"
+          src="/images/ecusta-photo-hero-valley.webp"
           alt="Wide view of the Ecusta Land sunflower, stream, trail, wellness, restored mill, and mountain vision at golden hour."
         />
       </section>
@@ -218,7 +218,7 @@ export default function Home() {
         <div className="photo-feature-grid">
           <img
             className="feature-photo"
-            src="/images/ecusta-photo-trail-stream.png"
+            src="/images/ecusta-photo-trail-stream.webp"
             alt="Walking and biking trail beside a clear stream with sunflowers, native grasses, wildflowers, and mountain views."
           />
           <div>
@@ -353,7 +353,7 @@ export default function Home() {
           </div>
           <img
             className="feature-photo"
-            src="/images/ecusta-photo-harvest-community.png"
+            src="/images/ecusta-photo-harvest-community.webp"
             alt="Community sunflower harvest and gathering space with baskets, pavilion, sacred geometry plaza, and mountain sunset."
           />
         </div>

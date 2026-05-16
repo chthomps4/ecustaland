@@ -38,20 +38,6 @@ const petitionUrl =
 
 /* ── data ── */
 
-const slides = [
-  ["Ecusta Tohi", "/images/tohi-plan/page-01.svg", "A Native American revitalization plan built around beautification, rejuvenation, and an ancestral approach to cleaning up the land."],
-  ["Mission", "/images/tohi-plan/page-02.svg", "Leverage the Native American sunflower for environmental remediation and transform the Ecusta property into a premier trail destination."],
-  ["Meaning of Tohi", "/images/tohi-plan/page-03.svg", "Tohi is peace, balance, wellness, and harmony — like water flowing gently through the mountains."],
-  ["Environmental Contaminants", "/images/tohi-plan/page-04.svg", "The Ecusta Paper Mill closure left environmental challenges involving land and water risk."],
-  ["The Solution", "/images/tohi-plan/page-05.svg", "Phytoremediation uses plants to help filter, stabilize, extract, degrade, and manage pollutants."],
-  ["Four Outcomes", "/images/tohi-plan/page-06.svg", "Restoration, beautification, tourism, and vitality become the public story for the land."],
-  ["Restoration", "/images/tohi-plan/page-07.svg", "Sunflowers are a sustainable green approach for visible land repair and public education."],
-  ["Beautification", "/images/tohi-plan/page-08.svg", "Sunflower fields are symbols of hope, strength, resilience, trails, lodging, and civic pride."],
-  ["Tourism", "/images/tohi-plan/page-09.svg", "White squirrels, waterfalls, the Ecusta Trail, boardwalks, lodging, and seasonal events."],
-  ["Vitality", "/images/tohi-plan/page-10.svg", "Healthy land, healthy water, and community well-being are inseparable."],
-  ["Conclusion", "/images/tohi-plan/page-11.svg", "Doing nothing is not an answer. The land must be remediated — and it can be beautiful."],
-];
-
 const principles = [
   ["Restoration", "Use sunflowers and native plantings as a visible phytomanagement and stewardship symbol rooted in Cherokee land care."],
   ["Beautification", "Transform an industrial legacy into a place people can walk, photograph, gather, and value — a living sanctuary."],
@@ -194,7 +180,7 @@ export default function TohiPlanPage() {
         .secondary { border: 1px solid rgba(255,250,240,.25); color: #fffaf0; }
 
         /* cards */
-        .hero-card, .principle-card, .slide-card, .callout, .wisdom-card, .earth-card, .freq-card, .wellness-card, .arch-card, .retail-card, .transit-card, .sacred-card { border: 1px solid rgba(23,35,29,.16); border-radius: 24px; box-shadow: 0 24px 80px rgba(16,32,22,.16); background: rgba(255,250,240,.82); }
+        .hero-card, .principle-card, .callout, .wisdom-card, .earth-card, .freq-card, .wellness-card, .arch-card, .retail-card, .transit-card, .sacred-card { border: 1px solid rgba(23,35,29,.16); border-radius: 24px; box-shadow: 0 24px 80px rgba(16,32,22,.16); background: rgba(255,250,240,.82); }
         .hero-card { padding: 1rem; background: rgba(255,250,240,.08); border-color: rgba(255,250,240,.18); backdrop-filter: blur(16px); }
         .hero-card img { width: 100%; display: block; border-radius: 18px; background: white; margin-bottom: 1.25rem; }
         .hero-card div { padding: 0 .5rem .5rem; }
@@ -209,15 +195,7 @@ export default function TohiPlanPage() {
         .principle-card { padding: 1.35rem; }
         .principle-card h3 { color: #496b43; }
 
-        /* slides */
-        .slide-section { background: linear-gradient(180deg,#102016,#183022); color: #fffaf0; }
-        .slide-section p { color: rgba(255,250,240,.72); }
-        .slide-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; }
-        .slide-card { overflow: hidden; background: rgba(255,250,240,.08); border-color: rgba(255,250,240,.15); }
-        .slide-card img { width: 100%; display: block; aspect-ratio: 1 / 1; object-fit: cover; background: #fff; }
-        .slide-card div { padding: 1.1rem; }
-        .slide-card span { display: inline-grid; place-items: center; width: 38px; height: 38px; border-radius: 999px; background: #d1a436; color: #102016; font-weight: 900; margin-bottom: .8rem; }
-        .slide-card h3 { color: #f0d982; }
+
 
         /* cherokee wisdom */
         .cherokee-section { background: radial-gradient(circle at 12% 20%,rgba(73,107,67,.18),transparent 28%), linear-gradient(180deg,#fffaf0,#f6f2e7); }
@@ -494,6 +472,14 @@ export default function TohiPlanPage() {
         </div>
       </section>
 
+      {/* ═══ WELLNESS SPA IMAGE ═══ */}
+      <section className="feat-img-section" style={{ minHeight: "45vh" }}>
+        <img src="/images/tohi/wellness-spa-mountain.webp" alt="Mountain wellness spa retreat — open-air sauna and healing pools overlooking Blue Ridge Mountains at sunset" loading="lazy" />
+        <div className="feat-img-overlay">
+          <p>A place to discover our strengths, enlighten our minds, and celebrate our emotions.</p>
+        </div>
+      </section>
+
       {/* ═══ BOUTIQUE HOTEL & WELLNESS RESORT ═══ */}
       <section className="section boutique-section">
         <div className="section-heading">
@@ -516,14 +502,6 @@ export default function TohiPlanPage() {
         <img src="/images/tohi/sunflower-field-mountains.webp" alt="Sunflower fields stretching toward the Blue Ridge Mountains — sunflowers make people happy, good medicine" loading="lazy" />
         <div className="feat-img-overlay">
           <p>🌻 Sunflower wisdom, since 3000 BC. The happiness of sunflowers. Good medicine. Symbolic value.</p>
-        </div>
-      </section>
-
-      {/* ═══ MEDICINE WHEEL IMAGE ═══ */}
-      <section className="feat-img-section" style={{ minHeight: "45vh" }}>
-        <img src="/images/tohi/cherokee-medicine-wheel-tohi.webp" alt="Cherokee medicine wheel on earth ground — four sacred cardinal directions with red, blue, black, and white, surrounded by native wildflowers and sunflowers" loading="lazy" />
-        <div className="feat-img-overlay">
-          <p>The sacred hoop of life. All things are connected in a circle. Health, community, spirit, and nature are one.</p>
         </div>
       </section>
 
@@ -696,27 +674,6 @@ export default function TohiPlanPage() {
               healing economy. The goal: move from vision to action. This is not a request for permission — it is an invitation to lead.
             </p>
           </article>
-        </div>
-      </section>
-
-      {/* ═══ SLIDES ═══ */}
-      <section id="slides" className="section slide-section">
-        <div className="section-heading">
-          <p className="eyebrow">Source Vision — Complete Image Set</p>
-          <h2>All Ecusta Tohi source images preserved on the site.</h2>
-          <p>Each card gives the visual, a plain-language title, and a short explanation so the original deck is easier to understand than a loose PDF.</p>
-        </div>
-        <div className="slide-grid">
-          {slides.map(([title, image, text], index) => (
-            <article className="slide-card" key={title}>
-              <img src={image} alt={`${title} - Ecusta Tohi source image`} loading="lazy" />
-              <div>
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <h3>{title}</h3>
-                <p>{text}</p>
-              </div>
-            </article>
-          ))}
         </div>
       </section>
 

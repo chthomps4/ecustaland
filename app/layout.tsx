@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/ecusta-photo-hero-valley.png",
+        url: "/images/ecusta-photo-hero-valley.webp",
         width: 1672,
         height: 941,
         alt: "Sunflower fields, walking paths, stream, restored mill buildings, mountains, and sacred geometry at golden hour in the Ecusta Land vision",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     title: "Ecusta Land | Sunflower Power for Brevard",
     description:
       "A sunflower, trails, wellness, and revitalization vision for the former Ecusta mill site in Brevard and Pisgah Forest, NC.",
-    images: ["/images/ecusta-photo-hero-valley.png"],
+    images: ["/images/ecusta-photo-hero-valley.webp"],
   },
 };
 

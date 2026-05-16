@@ -4,7 +4,7 @@ const pageTitle = "Take Action | Ecusta Land";
 const pageDescription =
   "Sign the petition, ask for records, and support a community-centered future for the former Ecusta mill site.";
 const pageUrl = "https://www.ecustaland.org/take-action";
-const pageImage = "/images/ecusta-photo-trail-stream.png";
+const pageImage = "/images/ecusta-photo-trail-stream.webp";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -99,7 +99,7 @@ export default function TakeActionPage() {
         <div className="photo-feature-grid">
           <img
             className="feature-photo"
-            src="/images/ecusta-photo-trail-stream.png"
+            src="/images/ecusta-photo-trail-stream.webp"
             alt="Walking and biking trail beside a clear stream with sunflowers, native grasses, wildflowers, and mountain views."
           />
           <div>
@@ -137,7 +137,7 @@ export default function TakeActionPage() {
         <div className="geometry-grid">
           <img
             className="wellness-image"
-            src="/images/ecusta-photo-wellness-garden.png"
+            src="/images/ecusta-photo-wellness-garden.webp"
             alt="Sacred-geometry wellness garden with meditation circle, sunflower plantings, stream, pavilion, and Blue Ridge mountain views."
           />
           <div>
@@ -172,7 +172,7 @@ export default function TakeActionPage() {
           </div>
           <img
             className="feature-photo"
-            src="/images/ecusta-photo-harvest-community.png"
+            src="/images/ecusta-photo-harvest-community.webp"
             alt="Community sunflower harvest and gathering space with baskets, pavilion, sacred geometry plaza, and mountain sunset."
           />
         </div>
